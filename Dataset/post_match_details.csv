@@ -1,0 +1,2335 @@
+"row ID","event_id","home_team","away_team","weather","highlights","season_id","home_team_id","away_team_id","home_coach_id","away_coach_id","referee_id","venue_id","event_date","status","round_number","round_name","group_name","period","current_minute","home_score","away_score","home_score_ht","away_score_ht","penalty_shootout_home","penalty_shootout_away","extra_time_score_home","extra_time_score_away","head_to_head_total_matches","head_to_head_home_wins","head_to_head_draws","head_to_head_away_wins","head_to_head_home_goals","head_to_head_away_goals","head_to_head_avg_total_goals","head_to_head_home_win_rate","head_to_head_away_win_rate","received_at"
+"Row0",8287,"Mexico","South Africa","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 5,
+  ""temperature_c"" : 21
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — South Africa l Hugo Broos & Teboho Mokoena"",
+  ""url"" : ""https://www.youtube.com/watch?v=ZLVpzspnBE0"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/ZLVpzspnBE0/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-11T11:42:24+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Mexico | Javier Aguirre & Santiago Gimenez"",
+  ""url"" : ""https://www.youtube.com/watch?v=ht0kvzGAcVw"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/ht0kvzGAcVw/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-11T11:41:05+00:00""
+} ]",188,451,452,128,87,1932,295,"2026-06-11T19:00:00+00:00","finished",1,"","Group A","FT",97,2,0,1,0,,,,,1,1,0,0,2,0,2,1,0,"2026-06-12T03:09:53.282Z"
+"Row1",8288,"South Korea","Czechia","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 7.8,
+  ""temperature_c"" : 20
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Czechia I Miroslav Koubek"",
+  ""url"" : ""https://youtu.be/F6C2JEccbkw"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/F6C2JEccbkw/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-11T12:11:34+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — South Korea l Hong Myungbo & Son Heungmin"",
+  ""url"" : ""https://youtu.be/-pZh-gxTBCE"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/-pZh-gxTBCE/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-11T12:09:33+00:00""
+} ]",188,453,930,105,579,2443,307,"2026-06-12T02:00:00+00:00","finished",1,"","Group A","FT",90,2,1,0,0,,,,,,,,,,,,,,"2026-06-12T10:05:35.440Z"
+"Row2",8289,"Canada","Bosnia & Herzegovina","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 11.4,
+  ""temperature_c"" : 26
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Canada | Jesse Marsch & Stephen Eustaquio"",
+  ""url"" : ""https://www.youtube.com/watch?v=aGtdwTKInLE"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/aGtdwTKInLE/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-12T08:10:36+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Bosnia and Herzegovina | Sergej Barbarez"",
+  ""url"" : ""https://www.youtube.com/watch?v=Z_JNq3cmc5M"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/Z_JNq3cmc5M/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-12T08:08:58+00:00""
+} ]",188,455,931,130,580,2401,275,"2026-06-12T19:00:00+00:00","finished",1,"","Group B","FT",96,1,1,0,1,,,,,1,0,1,0,1,1,2,0,0,"2026-06-13T03:00:37.072Z"
+"Row3",8290,"USA","Paraguay","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 20.7,
+  ""temperature_c"" : 22
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Paraguay | Gustavo Alfaro & Diego Gomez"",
+  ""url"" : ""https://www.youtube.com/watch?v=KZJjG3ox1qk"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/KZJjG3ox1qk/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-12T22:56:11+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — USA | Mauricio Pochettino"",
+  ""url"" : ""https://www.youtube.com/watch?v=ED0Qc-_JTfc"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/ED0Qc-_JTfc/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-12T22:54:48+00:00""
+} ]",188,457,458,122,90,2251,1180,"2026-06-13T01:00:00+00:00","finished",1,"","Group D","FT",90,4,1,2,1,,,,,,,,,,,,,,"2026-06-13T09:00:30.292Z"
+"Row4",8292,"Qatar","Switzerland","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 9.4,
+  ""temperature_c"" : 33
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""Qatar 1 - 1 Switzerland — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=iE5LAMGX04c"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/iE5LAMGX04c/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-13T21:14:22+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""Qatar 1 - 1 Switzerland — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=kjsD442TPCw"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/kjsD442TPCw/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-13T21:09:01+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Switzerland | Murat Yakin & Granit Xhaka"",
+  ""url"" : ""https://www.youtube.com/watch?v=FUuKKXn-cfo"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/FUuKKXn-cfo/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-13T13:05:49+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Qatar | Julen Lopetegui & Hassan Alhaydos"",
+  ""url"" : ""https://www.youtube.com/watch?v=EmlJADggl5U"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/EmlJADggl5U/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-13T01:02:18+00:00""
+} ]",188,461,462,570,78,2634,1181,"2026-06-13T19:00:00+00:00","finished",1,"","Group B","FT",96,1,1,0,1,,,,,1,0,1,0,1,1,2,0,0,"2026-06-14T03:00:30.920Z"
+"Row5",8293,"Brazil","Morocco","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 14.5,
+  ""temperature_c"" : 24
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Is this Brazil’s worst generation? — CBS Sports Golazo crew breaks down the numbers"",
+  ""url"" : ""https://www.youtube.com/watch?v=3JC2t7LwiD8"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/3JC2t7LwiD8/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-13T17:59:27+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Brazil | Carlo Ancelotti"",
+  ""url"" : ""https://www.youtube.com/watch?v=DlG2GLp5VwU"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/DlG2GLp5VwU/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-12T22:11:58+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Morocco | Mohamed Ouahbi & Achraf Hakimi"",
+  ""url"" : ""https://www.youtube.com/watch?v=MAsVbiZaHRo"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/MAsVbiZaHRo/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-12T22:11:15+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""A Guest and a Half: Raphinha — Raphinha: Part II"",
+  ""url"" : ""https://www.youtube.com/watch?v=4HK6v-bUELg&amp;t=1s"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/4HK6v-bUELg/hqdefault.jpg"",
+  ""published_at"" : ""2026-02-05T14:33:51+00:00""
+} ]",188,463,464,127,89,2386,1182,"2026-06-13T22:00:00+00:00","finished",1,"","Group C","FT",90,1,1,1,1,,,,,1,0,1,0,1,1,2,0,0,"2026-06-14T06:00:31.056Z"
+"Row6",8294,"Haiti","Scotland","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 0.8,
+  ""temperature_c"" : 12
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""Haiti 0 - 1 Scotland — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=hRN7UiV80qM"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/hRN7UiV80qM/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-14T03:14:00+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Haiti | Sebastien Migne"",
+  ""url"" : ""https://www.youtube.com/watch?v=_rQD2Wy0u20"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/_rQD2Wy0u20/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-12T23:33:13+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Scotland | Steve Clarke"",
+  ""url"" : ""https://www.youtube.com/watch?v=MWJ5xT69vK0"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/MWJ5xT69vK0/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-12T22:51:41+00:00""
+} ]",188,465,466,83,95,2481,273,"2026-06-14T01:00:00+00:00","finished",1,"","Group C","FT",90,0,1,0,1,,,,,,,,,,,,,,"2026-06-14T09:00:30.939Z"
+"Row7",8291,"Australia","Türkiye","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 1.5,
+  ""temperature_c"" : 16
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Türkiye | Vincenzo Montella"",
+  ""url"" : ""https://www.youtube.com/watch?v=xd3r0oURgYM"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/xd3r0oURgYM/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-13T09:08:36+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Australia | Tony Popović & Aiden O'Neill"",
+  ""url"" : ""https://www.youtube.com/watch?v=PTHX3mkehQc"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/PTHX3mkehQc/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-13T07:04:47+00:00""
+} ]",188,459,932,571,581,2118,266,"2026-06-14T04:00:00+00:00","finished",1,"","Group D","FT",90,2,0,1,0,,,,,,,,,,,,,,"2026-06-14T12:00:31.164Z"
+"Row8",8295,"Germany","Curaçao","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 12.2,
+  ""temperature_c"" : 30
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Curacao | Dick Advocaat & Leandro Bacuna"",
+  ""url"" : ""https://www.youtube.com/watch?v=aWuZUxTt-wE"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/aWuZUxTt-wE/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-14T06:19:37+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Germany | Julian Nagelsmann & Aleksandar Pavlovic"",
+  ""url"" : ""https://www.youtube.com/watch?v=8SvFc-d4_Ik"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/8SvFc-d4_Ik/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-14T00:52:42+00:00""
+} ]",188,467,468,51,1562,2477,1183,"2026-06-14T17:00:00+00:00","finished",1,"","Group E","FT",90,7,1,4,1,,,,,,,,,,,,,,"2026-06-15T01:00:33.560Z"
+"Row9",8296,"Netherlands","Japan","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 18,
+  ""temperature_c"" : 35
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""Netherlands 2 - 2 Japan — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=4GalIYEMjZQ"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/4GalIYEMjZQ/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-14T21:57:19+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Netherlands | Ronald Koeman & Frenkie De Jong"",
+  ""url"" : ""https://www.youtube.com/watch?v=q-BVju1TiVs"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/q-BVju1TiVs/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-14T13:28:10+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Japan | Hajime Moriyasu"",
+  ""url"" : ""https://www.youtube.com/watch?v=q9wJ2zXBcJM"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/q9wJ2zXBcJM/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-13T23:48:17+00:00""
+} ]",188,469,470,102,109,1771,1184,"2026-06-14T20:00:00+00:00","finished",1,"","Group F","FT",96,2,2,0,0,,,,,1,0,1,0,2,2,4,0,0,"2026-06-15T04:00:31.604Z"
+"Row10",8297,"Côte d'Ivoire","Ecuador","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 9.4,
+  ""temperature_c"" : 25
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Ecuador | Sebastián Beccacece & Angelo Preciado"",
+  ""url"" : ""https://www.youtube.com/watch?v=Xizx-mNq0Sg"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/Xizx-mNq0Sg/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-14T00:31:35+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Cote d'Ivoire | Emerse Fae"",
+  ""url"" : ""https://www.youtube.com/watch?v=ox5tj968UMg"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/ox5tj968UMg/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-14T00:30:27+00:00""
+} ]",188,471,472,96,103,1756,1185,"2026-06-14T23:00:00+00:00","finished",1,"","Group E","FT",97,1,0,0,0,,,,,1,1,0,0,1,0,1,1,0,"2026-06-15T07:00:31.806Z"
+"Row11",8298,"Sweden","Tunisia","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 21.3,
+  ""temperature_c"" : 30
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Tunisia | Sabri Lamouch & Ali Abdi"",
+  ""url"" : ""https://www.youtube.com/watch?v=SlC8leV3WQQ"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/SlC8leV3WQQ/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-14T01:05:16+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Sweden | Graham Potter & Victor Lindelof"",
+  ""url"" : ""https://www.youtube.com/watch?v=AD-CHHxBPOo&pp=0gcJCUELAYcqIYzv"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/AD-CHHxBPOo/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-14T01:04:51+00:00""
+} ]",188,731,474,574,131,2107,304,"2026-06-15T02:00:00+00:00","finished",1,"","Group F","FT",90,5,1,2,1,,,,,,,,,,,,,,"2026-06-15T10:00:31.960Z"
+"Row12",8299,"Spain","Cabo Verde","{
+  ""code"" : 3,
+  ""description"" : ""rain"",
+  ""wind_speed"" : 4.8,
+  ""temperature_c"" : 31
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Cabo Verde | Pedro Leitão Brito & Ryan Mendes"",
+  ""url"" : ""https://www.youtube.com/watch?v=B7k1bXh8yu0"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/B7k1bXh8yu0/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-15T06:32:30+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Spain | Luis de la Fuente"",
+  ""url"" : ""https://www.youtube.com/watch?v=ZaR4_DoHyOg"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/ZaR4_DoHyOg/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-14T21:50:41+00:00""
+} ]",188,475,476,116,1445,1722,265,"2026-06-15T16:00:00+00:00","finished",1,"","Group H","FT",90,0,0,0,0,,,,,,,,,,,,,,"2026-06-16T00:00:33.024Z"
+"Row13",8300,"Belgium","Egypt","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 9.6,
+  ""temperature_c"" : 20
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Egypt  | Hossam Hassan"",
+  ""url"" : ""https://www.youtube.com/watch?v=zWA4S94caeg"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/zWA4S94caeg/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-15T06:31:44+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Belgium | Rudi Garcia & Youri Tielemans"",
+  ""url"" : ""https://www.youtube.com/watch?v=PcWsi5QUiPU"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/PcWsi5QUiPU/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-14T22:47:01+00:00""
+} ]",188,477,478,129,117,2045,290,"2026-06-15T19:00:00+00:00","finished",1,"","Group G","FT",95,1,1,0,1,,,,,1,0,1,0,1,1,2,0,0,"2026-06-16T03:00:33.332Z"
+"Row14",8301,"Saudi Arabia","Uruguay","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 19.9,
+  ""temperature_c"" : 32
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Uruguay | Marcelo Bielsa"",
+  ""url"" : ""https://www.youtube.com/watch?v=IfOhSmJ_GcM"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/IfOhSmJ_GcM/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-15T06:29:48+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Saudi Arabia | Georgios Donis"",
+  ""url"" : ""https://www.youtube.com/watch?v=UUU74wuqmgA"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/UUU74wuqmgA/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-14T21:51:24+00:00""
+} ]",188,479,480,188,98,2345,1186,"2026-06-15T22:00:00+00:00","finished",1,"","Group H","FT",97,1,1,1,0,,,,,2,0,1,1,1,2,1.5,0,0.5,"2026-06-16T06:00:32.467Z"
+"Row15",8302,"Iran","New Zealand","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 16.3,
+  ""temperature_c"" : 21
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Iran | Amir Ghalenoei & Mehdi Taremi"",
+  ""url"" : ""https://www.youtube.com/watch?v=03aEnlQtNbQ"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/03aEnlQtNbQ/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-15T19:08:03+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — New Zealand | Darren Bazeley & Chris Wood"",
+  ""url"" : ""https://www.youtube.com/watch?v=6zFY9Id7USs"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/6zFY9Id7USs/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-15T06:30:45+00:00""
+} ]",188,481,482,63,578,2168,1180,"2026-06-16T01:00:00+00:00","finished",1,"","Group G","FT",90,2,2,1,1,,,,,,,,,,,,,,"2026-06-16T09:00:32.628Z"
+"Row16",8304,"France","Senegal","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 21.9,
+  ""temperature_c"" : 26
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""France 3 - 1 Senegal — Full Highlights"",
+  ""url"" : ""https://youtu.be/63h686GP-M0"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/63h686GP-M0/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-16T21:14:04+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Senegal | Pape Thiaw"",
+  ""url"" : ""https://www.youtube.com/watch?v=89jNruQuVUk"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/89jNruQuVUk/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-15T20:13:18+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — France | Didier Deschamps"",
+  ""url"" : ""https://www.youtube.com/watch?v=0oUs7bm4lLo"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/0oUs7bm4lLo/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-15T17:35:43+00:00""
+} ]",188,485,486,32,112,2535,1182,"2026-06-16T19:00:00+00:00","finished",1,"","Group I","FT",98,3,1,0,0,,,,,1,1,0,0,3,1,4,1,0,"2026-06-17T03:00:32.823Z"
+"Row17",8305,"Iraq","Norway","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 16.9,
+  ""temperature_c"" : 33
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""Iraq 1 - 4 Norway — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=t-6zC0dnWYs"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/t-6zC0dnWYs/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-17T00:13:52+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""Iraq 1 - 4 Norway — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=vmmat84fDdk"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/vmmat84fDdk/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-17T00:12:38+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""Iraq 1 - 4 Norway — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=HIReh6NKvJs"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/HIReh6NKvJs/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-17T00:11:08+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Iraq | Graham Arnold"",
+  ""url"" : ""https://www.youtube.com/watch?v=CKLr3BcAwb0"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/CKLr3BcAwb0/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-16T13:35:53+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Norway | Ståle Solbakken"",
+  ""url"" : ""https://youtu.be/CFAHkTqizvw"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/CFAHkTqizvw/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-15T23:17:02+00:00""
+} ]",188,933,488,582,77,2479,273,"2026-06-16T22:00:00+00:00","finished",1,"","Group I","FT",96,1,4,1,2,,,,,1,0,0,1,1,4,5,0,1,"2026-06-17T06:00:33.465Z"
+"Row18",8306,"Argentina","Algeria","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 26.3,
+  ""temperature_c"" : 21
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""Argentina 3 - 0 Algeria — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=94AO9wbDSpM"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/94AO9wbDSpM/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-17T03:12:15+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""Argentina 3 - 0 Algeria — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=_rMmV6x_hTU"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/_rMmV6x_hTU/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-17T03:03:15+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""Argentina 3 - 0 Algeria — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=7OTeFyBFDqk"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/7OTeFyBFDqk/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-17T03:01:54+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Algeria | Vladimir Petkovic"",
+  ""url"" : ""https://www.youtube.com/watch?v=CsW1BuMqbjg"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/CsW1BuMqbjg/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-16T06:20:35+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Argentina  | Lionel Scaloni"",
+  ""url"" : ""https://www.youtube.com/watch?v=bcPh-_GUR5Q"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/bcPh-_GUR5Q/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-15T22:23:01+00:00""
+} ]",188,489,490,124,97,1855,1187,"2026-06-17T01:00:00+00:00","finished",1,"","Group J","FT",90,3,0,1,0,,,,,2,2,0,0,5,3,4,1,0,"2026-06-17T09:00:32.990Z"
+"Row19",8303,"Austria","Jordan","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 11.8,
+  ""temperature_c"" : 24
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Austria | Coach Rangnick & Captain Alaba"",
+  ""url"" : ""https://www.youtube.com/watch?v=YQiC_6CMUmQ"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/YQiC_6CMUmQ/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-16T14:11:53+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Jordan | Jamal Sellami & Ihsan Haddas"",
+  ""url"" : ""https://www.youtube.com/watch?v=WZ0tfZguaLM"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/WZ0tfZguaLM/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-16T07:10:29+00:00""
+} ]",188,483,484,104,85,2485,1181,"2026-06-17T04:00:00+00:00","finished",1,"","Group J","FT",90,3,1,1,0,,,,,,,,,,,,,,"2026-06-17T12:00:33.017Z"
+"Row20",8307,"Portugal","DR Congo","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 13.2,
+  ""temperature_c"" : 31
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Portugal | Coach Roberto Martinez"",
+  ""url"" : ""https://www.youtube.com/watch?v=cU2bg-r9QUs"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/cU2bg-r9QUs/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-17T07:50:56+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Congo DR | Sébastien Desabre"",
+  ""url"" : ""https://youtu.be/0yxXNEHQzjE"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/0yxXNEHQzjE/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-16T22:08:01+00:00""
+} ]",188,491,648,123,583,2604,1183,"2026-06-17T17:00:00+00:00","finished",1,"","Group K","FT",90,1,1,1,1,,,,,,,,,,,,,,"2026-06-18T01:00:33.635Z"
+"Row21",8308,"England","Croatia","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 29.1,
+  ""temperature_c"" : 35
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""England 4 - 2 Croatia — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=KPulZU-RoLg"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/KPulZU-RoLg/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-17T22:12:45+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""England 4 - 2 Croatia — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=XvhHEEEEA78&pp=0gcJCT4LAYcqIYzv"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/XvhHEEEEA78/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-17T22:10:42+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""England 4 - 2 Croatia — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=4oSd8kBXO6A&pp=0gcJCT4LAYcqIYzv"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/4oSd8kBXO6A/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-17T22:10:04+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""England 4 - 2 Croatia — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=BVU5ZkkdSXU"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/BVU5ZkkdSXU/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-17T22:09:32+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Croatia | Coach Zlatko Dalić and Luka Modrić"",
+  ""url"" : ""https://www.youtube.com/watch?v=zUPtYg9pzRQ"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/zUPtYg9pzRQ/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-17T09:46:16+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — England | Coach Thomas Tuchel and Harry Kane"",
+  ""url"" : ""https://www.youtube.com/watch?v=_eo47ndHkdc"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/_eo47ndHkdc/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-17T06:21:13+00:00""
+} ]",188,493,494,108,126,2134,1184,"2026-06-17T20:00:00+00:00","finished",1,"","Group L","FT",96,4,2,3,2,,,,,2,1,0,1,5,4,4.5,0.5,0.5,"2026-06-18T04:00:35.424Z"
+"Row22",8309,"Ghana","Panama","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 14,
+  ""temperature_c"" : 14
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Panama | Thomas Christiansen Tarín & Anibal Godoy"",
+  ""url"" : ""https://youtu.be/_BNU__K9OXA"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/_BNU__K9OXA/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-16T21:05:17+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Ghana | Carlos Queiroz"",
+  ""url"" : ""https://www.youtube.com/watch?v=_oEkLgAACTE"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/_oEkLgAACTE/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-16T20:07:44+00:00""
+} ]",188,495,496,838,88,2039,275,"2026-06-17T23:00:00+00:00","finished",1,"","Group L","FT",96,1,0,0,0,,,,,1,1,0,0,1,0,1,1,0,"2026-06-18T07:00:33.488Z"
+"Row23",8310,"Uzbekistan","Colombia","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 4.1,
+  ""temperature_c"" : 17
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Uzbekistan | Fabio Cannavaro and Eldor Shomurodov"",
+  ""url"" : ""https://www.youtube.com/watch?v=QZHoxuqR5OE"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/QZHoxuqR5OE/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-17T10:51:16+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Colombia | Néstor Gabriel Lorenzo"",
+  ""url"" : ""https://www.youtube.com/watch?v=aL2aSEcTmWo"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/aL2aSEcTmWo/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-17T00:53:44+00:00""
+} ]",188,497,498,575,31,1757,295,"2026-06-18T02:00:00+00:00","finished",1,"","Group K","FT",90,1,3,0,1,,,,,,,,,,,,,,"2026-06-18T10:00:33.463Z"
+"Row24",8311,"Czechia","South Africa","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 12,
+  ""temperature_c"" : 34
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — South Africa | Hugo Broos"",
+  ""url"" : ""https://www.youtube.com/watch?v=6VFio7MKpx8"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/6VFio7MKpx8/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-18T03:59:17+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Czechia | Miroslav Koubek & Ladislav Krejčí"",
+  ""url"" : ""https://www.youtube.com/watch?v=cK4sb-tcrVw&pp=0gcJCT8LAYcqIYzv"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/cK4sb-tcrVw/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-17T22:37:37+00:00""
+} ]",188,930,452,579,87,1837,265,"2026-06-18T16:00:00+00:00","finished",2,"","Group A","FT",90,1,1,1,0,,,,,,,,,,,,,,"2026-06-19T00:00:33.960Z"
+"Row25",8312,"Switzerland","Bosnia & Herzegovina","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 16.3,
+  ""temperature_c"" : 21
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Bosnia and Herzegovina |  Sergej Barbarez & Nikola Katić"",
+  ""url"" : ""https://www.youtube.com/watch?v=EfdFMoPVpuc"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/EfdFMoPVpuc/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-18T08:33:42+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Switzerland |  Murat Yakin & Remo Freuler"",
+  ""url"" : ""https://www.youtube.com/watch?v=zSs8gl8wIJ0"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/zSs8gl8wIJ0/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-18T08:06:41+00:00""
+} ]",188,462,931,78,580,2238,1180,"2026-06-18T19:00:00+00:00","finished",2,"","Group B","FT",96,4,1,0,0,,,,,1,1,0,0,4,1,5,1,0,"2026-06-19T03:00:34.388Z"
+"Row26",8313,"Canada","Qatar","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 13,
+  ""temperature_c"" : 18
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""Canada 6 - 0 Qatar — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=IBiGl8eMiRg"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/IBiGl8eMiRg/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-19T00:14:48+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Canada | Jesse Marsch & Ismael Koné"",
+  ""url"" : ""https://www.youtube.com/watch?v=Sx2Dn3zO8z8"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/Sx2Dn3zO8z8/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-18T08:49:14+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Qatar | Coach Julen Lopetegui"",
+  ""url"" : ""https://www.youtube.com/watch?v=85ieq16q3vc"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/85ieq16q3vc/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-18T03:58:17+00:00""
+} ]",188,455,461,130,570,2119,266,"2026-06-18T22:00:00+00:00","finished",2,"","Group B","FT",99,6,0,3,0,,,,,1,1,0,0,6,0,6,1,0,"2026-06-19T06:00:34.511Z"
+"Row27",8314,"Mexico","South Korea","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 2.3,
+  ""temperature_c"" : 24
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Mexico | Coach Javier Aguirre"",
+  ""url"" : ""https://www.youtube.com/watch?v=cnAntfZCuyY"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/cnAntfZCuyY/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-18T09:33:10+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — South Korea | Hong Myungbo & Hwang Inbeom"",
+  ""url"" : ""https://www.youtube.com/watch?v=CMw4KlB5-g4"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/CMw4KlB5-g4/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-17T23:08:08+00:00""
+} ]",188,451,453,128,105,2106,307,"2026-06-19T01:00:00+00:00","finished",2,"","Group A","FT",90,1,0,0,0,,,,,1,1,0,0,2,1,3,1,0,"2026-06-19T09:00:34.194Z"
+"Row28",8316,"USA","Australia","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 13.1,
+  ""temperature_c"" : 25
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""USA 2 - 0 Australia — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=Y3fM4mIEprk"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/Y3fM4mIEprk/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-19T21:10:54+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""USA 2 - 0 Australia — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=UGlWSV-T83E"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/UGlWSV-T83E/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-19T21:09:54+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Australia | Coach Popovic & Souttar"",
+  ""url"" : ""https://www.youtube.com/watch?v=TWylMX3prCg"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/TWylMX3prCg/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-19T08:05:46+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — USA | Coach Mauricio Pochettino"",
+  ""url"" : ""https://www.youtube.com/watch?v=zs1J7rhc4KI"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/zs1J7rhc4KI/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-19T00:52:46+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Bring on the Socceroos! — USMNT vs. Australia preview & predictions"",
+  ""url"" : ""https://youtu.be/yOphQeb2ZYU?t=2"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/yOphQeb2ZYU/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-18T06:01:53+00:00""
+} ]",188,457,459,122,571,1790,290,"2026-06-19T19:00:00+00:00","finished",2,"","Group D","FT",96,2,0,1,1,,,,,1,1,0,0,2,0,2,1,0,"2026-06-20T03:00:35.526Z"
+"Row29",8317,"Scotland","Morocco","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 9.2,
+  ""temperature_c"" : 25
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Scotland | Coach Steve Clarke"",
+  ""url"" : ""https://www.youtube.com/watch?v=64by8vYtAKs"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/64by8vYtAKs/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-19T20:50:34+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Morocco | Coach Mohamed Ouahbi"",
+  ""url"" : ""https://www.youtube.com/watch?v=t-iKiO0M11g"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/t-iKiO0M11g/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-19T00:54:14+00:00""
+} ]",188,466,464,95,89,1714,273,"2026-06-19T22:00:00+00:00","finished",2,"","Group C","FT",96,0,1,0,1,,,,,1,0,0,1,0,1,1,0,1,"2026-06-20T06:00:34.771Z"
+"Row30",8318,"Brazil","Haiti","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 13.6,
+  ""temperature_c"" : 25
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""Brazil 3 - 0 Haiti — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=klEtq83CchQ"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/klEtq83CchQ/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-20T02:41:58+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Haiti | Coach Sébastien Migné"",
+  ""url"" : ""https://www.youtube.com/watch?v=NJNLG47NJDs"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/NJNLG47NJDs/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-19T08:14:54+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Brazil | Coach Carlo Ancelotti"",
+  ""url"" : ""https://www.youtube.com/watch?v=PSB3LgFv0e8"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/PSB3LgFv0e8/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-19T01:28:10+00:00""
+} ]",188,463,465,127,83,1780,1185,"2026-06-20T00:30:00+00:00","finished",2,"","Group C","FT",90,3,0,3,0,,,,,,,,,,,,,,"2026-06-20T08:30:34.761Z"
+"Row31",8315,"Türkiye","Paraguay","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 6.2,
+  ""temperature_c"" : 22
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Paraguay | Coach Gustavo Alfaro and Matias Galarza"",
+  ""url"" : ""https://www.youtube.com/watch?v=TAcQBbbi0OM"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/TAcQBbbi0OM/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-19T01:27:11+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Türkiye | Vincenzo Montella"",
+  ""url"" : ""https://www.youtube.com/watch?v=M5jO_AFJTpU"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/M5jO_AFJTpU/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-18T23:32:28+00:00""
+} ]",188,932,458,581,90,2462,1181,"2026-06-20T03:00:00+00:00","finished",2,"","Group D","FT",90,0,1,0,1,,,,,,,,,,,,,,"2026-06-20T11:00:34.897Z"
+"Row32",8320,"Netherlands","Sweden","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 20.2,
+  ""temperature_c"" : 32
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Netherlands | Ronald Koeman & Jan Paul Van Hecke"",
+  ""url"" : ""https://www.youtube.com/watch?v=y6UXnP84M8M"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/y6UXnP84M8M/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-20T02:12:14+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Sweden | Graham Potter & Victor Lindelöf"",
+  ""url"" : ""https://www.youtube.com/watch?v=-VPe5yKK1Dg"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/-VPe5yKK1Dg/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-19T22:05:45+00:00""
+} ]",188,469,731,102,574,1756,1183,"2026-06-20T17:00:00+00:00","finished",2,"","Group F","FT",95,5,1,3,0,,,,,,,,,,,,,,"2026-06-21T01:00:36.087Z"
+"Row33",8321,"Germany","Côte d'Ivoire","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 21.3,
+  ""temperature_c"" : 24
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Germany | Julian Nagelsmann & Jonathan Tah"",
+  ""url"" : ""https://www.youtube.com/watch?v=9zk7HfUq3TA"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/9zk7HfUq3TA/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-20T00:23:11+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Cote d'Ivoire | Emerse Fae"",
+  ""url"" : ""https://www.youtube.com/watch?v=E7v8zCd-VVc"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/E7v8zCd-VVc/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-19T21:07:22+00:00""
+} ]",188,467,471,51,96,2094,275,"2026-06-20T20:00:00+00:00","finished",2,"","Group E","FT",96,2,1,0,1,,,,,1,1,0,0,2,1,3,1,0,"2026-06-21T04:00:35.396Z"
+"Row34",8322,"Ecuador","Curaçao","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 2.2,
+  ""temperature_c"" : 22
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Ecuador | Sebastián Andrés Beccacece & Alan Franco"",
+  ""url"" : ""https://www.youtube.com/watch?v=Z47UWjaZTMw"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/Z47UWjaZTMw/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-20T02:33:32+00:00""
+} ]",188,472,468,103,1562,1701,1187,"2026-06-21T00:00:00+00:00","finished",2,"","Group E","FT",90,0,0,0,0,,,,,1,0,1,0,0,0,0,0,0,"2026-06-21T08:00:35.785Z"
+"Row35",8319,"Tunisia","Japan","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 18.2,
+  ""temperature_c"" : 29
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Tunisia | Hervé Renard & Ellyes Skhiri"",
+  ""url"" : ""https://www.youtube.com/watch?v=cK7tbA_idHs"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/cK7tbA_idHs/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-19T21:44:35+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Japan | Hajime Moriyasu"",
+  ""url"" : ""https://www.youtube.com/watch?v=KDJ9OUPQXBk"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/KDJ9OUPQXBk/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-19T21:06:04+00:00""
+} ]",188,474,470,71,109,1674,304,"2026-06-21T04:00:00+00:00","finished",2,"","Group F","FT",90,0,4,0,2,,,,,,,,,,,,,,"2026-06-21T12:00:35.618Z"
+"Row36",8323,"Spain","Saudi Arabia","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 16.8,
+  ""temperature_c"" : 30
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Saudi Arabia | Georgios Donis"",
+  ""url"" : ""https://www.youtube.com/watch?v=x2zcK31dUtY"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/x2zcK31dUtY/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-21T03:55:32+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Spain | Luis de la Fuente"",
+  ""url"" : ""https://www.youtube.com/watch?v=aPwC0k_Ej8w"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/aPwC0k_Ej8w/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-20T23:51:07+00:00""
+} ]",188,475,479,116,188,1616,265,"2026-06-21T16:00:00+00:00","finished",2,"","Group H","FT",90,4,0,3,1,,,,,,,,,,,,,,"2026-06-22T00:00:37.012Z"
+"Row37",8324,"Belgium","Iran","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 16.4,
+  ""temperature_c"" : 20
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Iran | Amir Ghalenoei & Saeed Ezatolahi"",
+  ""url"" : ""https://www.youtube.com/watch?v=-Dsa8SyiZTw"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/-Dsa8SyiZTw/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-21T14:12:05+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Belgium | Rudi Garcia & Thomas Meunier"",
+  ""url"" : ""https://www.youtube.com/watch?v=PfG8EvUumsA"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/PfG8EvUumsA/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-20T23:50:36+00:00""
+} ]",188,477,481,129,63,2112,1180,"2026-06-21T19:00:00+00:00","finished",2,"","Group G","FT",95,0,0,0,0,,,,,1,0,1,0,0,0,0,0,0,"2026-06-22T03:00:38.315Z"
+"Row38",8325,"Uruguay","Cabo Verde","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 18.2,
+  ""temperature_c"" : 31
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Cabo Verde | Bubista i Garry Rodrigues"",
+  ""url"" : ""https://www.youtube.com/watch?v=Ya49Wa_nOBM"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/Ya49Wa_nOBM/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-21T13:46:47+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Uruguay | Marcelo Bielsa"",
+  ""url"" : ""https://www.youtube.com/watch?v=lmnE4DXm0jM"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/lmnE4DXm0jM/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-21T03:54:36+00:00""
+} ]",188,480,476,98,1445,1639,1186,"2026-06-21T22:00:00+00:00","finished",2,"","Group H","FT",98,2,2,2,1,,,,,1,0,1,0,2,2,4,0,0,"2026-06-22T06:00:36.046Z"
+"Row39",8326,"New Zealand","Egypt","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 7.5,
+  ""temperature_c"" : 19
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""New Zealand 1 - 3 Egypt — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=eIgNx0q19C4"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/eIgNx0q19C4/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-22T03:05:16+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""New Zealand 1 - 3 Egypt — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=0eXERByejAI"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/0eXERByejAI/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-22T03:04:24+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Egypt | Hossam Hassan"",
+  ""url"" : ""https://www.youtube.com/watch?v=ZWMiLPEcvCE"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/ZWMiLPEcvCE/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-21T03:55:04+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — New Zealand | Darren Bazeley & Chris Wood"",
+  ""url"" : ""https://www.youtube.com/watch?v=CzgSq_cKFeY"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/CzgSq_cKFeY/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-20T23:50:06+00:00""
+} ]",188,482,478,578,117,2603,266,"2026-06-22T01:00:00+00:00","finished",2,"","Group G","FT",90,1,3,1,0,,,,,,,,,,,,,,"2026-06-22T09:00:36.196Z"
+"Row40",8327,"Argentina","Austria","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 22.1,
+  ""temperature_c"" : 33
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""Argentina 2 - 0 Austria — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=t-DjpFwvWVM&pp=0gcJCT8LAYcqIYzv"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/t-DjpFwvWVM/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-22T19:14:27+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""Argentina 2 - 0 Austria — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=MaKI4gx9cWo"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/MaKI4gx9cWo/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-22T19:11:18+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""Argentina 2 - 0 Austria — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=IzWAY9nAzWc"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/IzWAY9nAzWc/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-22T19:09:42+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Austria | Ralf Rangnick & Marcel Sabitzer"",
+  ""url"" : ""https://www.youtube.com/watch?v=prtcyVLif8M"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/prtcyVLif8M/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-22T08:49:05+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Argentina | Lionel Scaloni"",
+  ""url"" : ""https://www.youtube.com/watch?v=WVi5DeNMFM4"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/WVi5DeNMFM4/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-22T01:29:03+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""The greatest of all time — Is Messi STILL the best player in the World?"",
+  ""url"" : ""https://www.youtube.com/watch?v=MMfHAMC9yzg"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/MMfHAMC9yzg/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-18T06:00:00+00:00""
+} ]",188,489,483,124,104,2443,1184,"2026-06-22T17:00:00+00:00","finished",2,"","Group J","FT",90,2,0,1,0,,,,,,,,,,,,,,"2026-06-23T01:13:20.848Z"
+"Row41",8328,"France","Iraq","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 10.3,
+  ""temperature_c"" : 34
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""France 3 - 0 Iraq — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=ln6GEJiB798"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/ln6GEJiB798/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-23T01:36:20+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""France 3 - 0 Iraq — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=Mo7aY61WF9I"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/Mo7aY61WF9I/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-23T01:35:04+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""France 3 - 0 Iraq — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=A7TOyljELig"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/A7TOyljELig/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-23T01:34:26+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""France 3 - 0 Iraq — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=i9H4Id62pc0"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/i9H4Id62pc0/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-23T01:20:56+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""France 3 - 0 Iraq — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=g9jy0ztUETY"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/g9jy0ztUETY/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-23T01:06:42+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""France 3 - 0 Iraq — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=8fsUtku9ybo"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/8fsUtku9ybo/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-23T01:05:19+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""France 3 - 0 Iraq — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=Pe8vZdS-EBoca"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/Pe8vZdS-EBo/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-23T01:04:11+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""France 3 - 0 Iraq — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=TAKTTKNQp2Y"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/TAKTTKNQp2Y/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-23T01:02:26+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Iraq | Graham Arnold and Aymen Hussein"",
+  ""url"" : ""https://www.youtube.com/watch?v=LelNYxBT5zs"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/LelNYxBT5zs/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-21T23:40:46+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — France | Didier Deschamps"",
+  ""url"" : ""https://www.youtube.com/watch?v=csaCmM2jnu0"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/csaCmM2jnu0/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-21T23:38:23+00:00""
+} ]",188,485,933,32,582,1769,1185,"2026-06-22T21:00:00+00:00","finished",2,"","Group I","HT",92,3,0,1,0,,,,,1,1,0,0,3,0,3,1,0,"2026-06-23T05:13:19.999Z"
+"Row42",8329,"Norway","Senegal","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 12.9,
+  ""temperature_c"" : 28
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Norway | Ståle Solbakken"",
+  ""url"" : ""https://www.youtube.com/watch?v=hSjRgdmAUnU"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/hSjRgdmAUnU/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-22T01:30:54+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Senegal | Pape Thiaw & Mory Diaw"",
+  ""url"" : ""https://www.youtube.com/watch?v=3cW0mKJJprE"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/3cW0mKJJprE/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-21T20:37:06+00:00""
+} ]",188,488,486,77,112,1932,1182,"2026-06-23T00:00:00+00:00","finished",2,"","Group I","FT",90,3,2,2,0,,,,,1,1,0,0,3,2,5,1,0,"2026-06-23T08:13:21.695Z"
+"Row43",8330,"Jordan","Algeria","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 14.9,
+  ""temperature_c"" : 20
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Algeria | Vladimir Petkovic"",
+  ""url"" : ""https://www.youtube.com/watch?v=UAe71x1fybY"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/UAe71x1fybY/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-22T08:50:30+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Jordan | Jamal Sellami & Yazan Alarab"",
+  ""url"" : ""https://www.youtube.com/watch?v=_8C-4rFx1ug"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/_8C-4rFx1ug/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-21T23:33:30+00:00""
+} ]",188,484,490,85,97,2386,1181,"2026-06-23T03:00:00+00:00","finished",2,"","Group J","FT",90,1,2,1,0,,,,,,,,,,,,,,"2026-06-23T11:13:20.295Z"
+"Row44",8331,"Portugal","Uzbekistan","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 6.6,
+  ""temperature_c"" : 34
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""Portugal 5 - 0 Uzbekistan — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=F_h8fTNAxRE"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/F_h8fTNAxRE/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-23T19:03:18+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""Portugal 5 - 0 Uzbekistan — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=aJva_fZEpRc"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/aJva_fZEpRc/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-23T19:02:38+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Uzbekistan | Fabio Cannavaro & Eldor Shomurodov"",
+  ""url"" : ""https://youtu.be/NPILUm-eB7Q?si=O-WCwsGN4Az8wWEe"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/NPILUm-eB7Q/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-23T11:09:48+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Portugal | Roberto Martínez"",
+  ""url"" : ""https://www.youtube.com/watch?v=CtaAIAbALsU"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/CtaAIAbALsU/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-23T01:37:02+00:00""
+} ]",188,491,497,123,575,2477,1183,"2026-06-23T17:00:00+00:00","finished",2,"","Group K","FT",90,5,0,3,0,,,,,,,,,,,,,,"2026-06-24T01:13:20.303Z"
+"Row45",8332,"England","Ghana","{
+  ""code"" : 3,
+  ""description"" : ""rain"",
+  ""wind_speed"" : 10.7,
+  ""temperature_c"" : 23
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — England | Thomas Tuchel & Declan Rice"",
+  ""url"" : ""https://www.youtube.com/watch?v=rsZxX3eOJCc"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/rsZxX3eOJCc/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-23T01:19:57+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Ghana | Carlos Queiroz"",
+  ""url"" : ""https://www.youtube.com/watch?v=NbnoTSkC3vs"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/NbnoTSkC3vs/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-22T19:07:08+00:00""
+} ]",188,493,495,108,838,2634,273,"2026-06-23T20:00:00+00:00","finished",2,"","Group L","FT",96,0,0,0,0,,,,,1,0,1,0,0,0,0,0,0,"2026-06-24T04:10:19.651Z"
+"Row46",8333,"Panama","Croatia","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 4.7,
+  ""temperature_c"" : 20
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Croatia | Zlatko Dalić And Mateo Kovačić"",
+  ""url"" : ""https://www.youtube.com/watch?v=r-esg8jOgKA"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/r-esg8jOgKA/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-22T23:43:10+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Panama | Thomas Christiansen"",
+  ""url"" : ""https://www.youtube.com/watch?v=0JdUW6c43mk"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/0JdUW6c43mk/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-22T19:34:50+00:00""
+} ]",188,496,494,88,126,2479,275,"2026-06-23T23:00:00+00:00","finished",2,"","Group L","FT",95,0,1,0,0,,,,,1,0,0,1,0,1,1,0,1,"2026-06-24T07:10:19.452Z"
+"Row47",8334,"Colombia","DR Congo","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 8.7,
+  ""temperature_c"" : 21
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Congo DR | Sébastien Desabre & Aaron Tshibola"",
+  ""url"" : ""https://youtu.be/0bp2fCnLOMU?si=ZOQgkAe_aJNMFLzl"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/0bp2fCnLOMU/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-23T11:10:49+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Colombia | Néstor Lorenzo"",
+  ""url"" : ""https://www.youtube.com/watch?v=tFk76_ZzPlk"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/tFk76_ZzPlk/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-22T23:42:01+00:00""
+} ]",188,498,648,31,583,2345,307,"2026-06-24T02:00:00+00:00","finished",2,"","Group K","FT",90,1,0,0,0,,,,,,,,,,,,,,"2026-06-24T10:10:19.540Z"
+"Row48",8336,"Bosnia & Herzegovina","Qatar","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 10.6,
+  ""temperature_c"" : 12
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Bosnia and Herzegovina | Sergej Barbarez & Ivan Šunjić"",
+  ""url"" : ""https://www.youtube.com/watch?v=qXwkXM5_4y4"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/qXwkXM5_4y4/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-24T07:55:31+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Qatar | Julen Lopetegui and Ahmed Alaaeldin"",
+  ""url"" : ""https://www.youtube.com/watch?v=slFdu2wpGIg"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/slFdu2wpGIg/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-24T00:56:37+00:00""
+} ]",188,931,461,580,570,2118,290,"2026-06-24T19:00:00+00:00","finished",3,"","Group B","FT",96,3,1,1,2,,,,,1,1,0,0,3,1,4,1,0,"2026-06-25T03:10:21.929Z"
+"Row49",8335,"Switzerland","Canada","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 9.4,
+  ""temperature_c"" : 11
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Canada | Jesse Marsch and Jonathan David"",
+  ""url"" : ""https://www.youtube.com/watch?v=Y8q8hzNdrFc"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/Y8q8hzNdrFc/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-24T00:58:54+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Switzerland | Murat Yakin & Manuel Akanji"",
+  ""url"" : ""https://www.youtube.com/watch?v=2pE8QJC2GFw"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/2pE8QJC2GFw/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-24T00:57:51+00:00""
+} ]",188,462,455,78,130,2045,266,"2026-06-24T19:00:00+00:00","finished",3,"","Group B","FT",96,2,1,1,0,,,,,1,1,0,0,2,1,3,1,0,"2026-06-25T03:10:28.688Z"
+"Row50",8338,"Scotland","Brazil","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 13,
+  ""temperature_c"" : 33
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Brazil | Carlo Ancelotti"",
+  ""url"" : ""https://www.youtube.com/watch?v=GL3Cy_f7tBQ"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/GL3Cy_f7tBQ/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-24T08:37:25+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Scotland | Steve Clarke"",
+  ""url"" : ""https://www.youtube.com/watch?v=UN1WLTGvYuI"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/UN1WLTGvYuI/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-23T19:54:16+00:00""
+} ]",188,466,463,95,127,2168,1186,"2026-06-24T22:00:00+00:00","finished",3,"","Group C","FT",96,0,3,0,2,,,,,1,0,0,1,0,3,3,0,1,"2026-06-25T06:10:21.939Z"
+"Row51",8337,"Morocco","Haiti","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 18.6,
+  ""temperature_c"" : 31
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Morocco | Mohamed Ouahbi & Munir El Kajoui"",
+  ""url"" : ""https://www.youtube.com/watch?v=tiu-VB5ZflA"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/tiu-VB5ZflA/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-24T01:00:23+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Haiti | Sébastien Migné"",
+  ""url"" : ""https://www.youtube.com/watch?v=EZykAkkFItc"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/EZykAkkFItc/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-24T00:59:56+00:00""
+} ]",188,464,465,89,83,2251,265,"2026-06-24T22:00:00+00:00","finished",3,"","Group C","FT",95,4,2,3,1,,,,,1,1,0,0,4,2,6,1,0,"2026-06-25T06:10:25.237Z"
+"Row52",8339,"South Africa","South Korea","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 10.6,
+  ""temperature_c"" : 26
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — South Korea | Hong Myungbo and Kim Minjae"",
+  ""url"" : ""https://www.youtube.com/watch?v=G4nnTbZBjb0"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/G4nnTbZBjb0/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-24T00:59:25+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — South Africa | Hugo Broos & Sphephelo Sithole"",
+  ""url"" : ""https://www.youtube.com/watch?v=F65wq0sO3vo"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/F65wq0sO3vo/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-23T19:07:25+00:00""
+} ]",188,452,453,87,105,2401,304,"2026-06-25T01:00:00+00:00","finished",3,"","Group A","FT",90,1,0,0,0,,,,,,,,,,,,,,"2026-06-25T09:10:20.089Z"
+"Row53",8340,"Czechia","Mexico","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 5,
+  ""temperature_c"" : 19
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Czechia | Miroslav Koubek & Ladislav Krejčí"",
+  ""url"" : ""https://www.youtube.com/watch?v=7uKQmyXzAjc"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/7uKQmyXzAjc/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-24T00:58:26+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Mexico | Javier Aguirre"",
+  ""url"" : ""https://www.youtube.com/watch?v=3fjJae_BhZ0"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/3fjJae_BhZ0/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-24T00:57:17+00:00""
+} ]",188,930,451,579,128,2107,295,"2026-06-25T01:00:00+00:00","finished",3,"","Group A","FT",90,0,3,0,0,,,,,,,,,,,,,,"2026-06-25T09:10:28.670Z"
+"Row54",8341,"Curaçao","Côte d'Ivoire","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 24.1,
+  ""temperature_c"" : 32
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Cote d'Ivoire | Emerse Faé"",
+  ""url"" : ""https://www.youtube.com/watch?v=VHKml6DJ858"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/VHKml6DJ858/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-25T00:20:53+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Curacao | Dick Advocaat And Tahith Chong"",
+  ""url"" : ""https://www.youtube.com/watch?v=6oFVQy0qRRY"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/6oFVQy0qRRY/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-24T23:35:25+00:00""
+} ]",188,468,471,1562,96,2039,1185,"2026-06-25T20:00:00+00:00","finished",3,"","Group E","FT",96,0,2,0,1,,,,,1,0,0,1,0,2,2,0,1,"2026-06-26T04:10:20.891Z"
+"Row55",8342,"Ecuador","Germany","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 9.9,
+  ""temperature_c"" : 28
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Germany | Julian Nagelsmann & Deniz Undav"",
+  ""url"" : ""https://www.youtube.com/watch?v=vGMOOIu5wzk"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/vGMOOIu5wzk/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-25T01:58:37+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Ecuador | Sebastián Beccacece & Moises Caicedo"",
+  ""url"" : ""https://www.youtube.com/watch?v=h8nsOT5MuxU"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/h8nsOT5MuxU/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-25T00:52:19+00:00""
+} ]",188,472,467,103,51,1837,1182,"2026-06-25T20:00:00+00:00","finished",3,"","Group E","FT",97,2,1,1,1,,,,,1,1,0,0,2,1,3,1,0,"2026-06-26T04:10:26.977Z"
+"Row56",8344,"Tunisia","Netherlands","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 10.1,
+  ""temperature_c"" : 25
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Netherlands | Ronald Koeman & Ryan Gravenberch"",
+  ""url"" : ""https://www.youtube.com/watch?v=qzyCTjxxZRA"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/qzyCTjxxZRA/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-24T22:41:15+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Tunisia | Hervé Renard & Aymen Dahmen"",
+  ""url"" : ""https://www.youtube.com/watch?v=BD0U2iCTCu4"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/BD0U2iCTCu4/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-24T20:48:47+00:00""
+} ]",188,474,469,71,102,2261,1187,"2026-06-25T23:00:00+00:00","finished",3,"","Group F","FT",95,1,3,1,1,,,,,1,0,0,1,1,3,4,0,1,"2026-06-26T07:10:22.914Z"
+"Row57",8343,"Japan","Sweden","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 11.9,
+  ""temperature_c"" : 36
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Sweden | Graham Potter"",
+  ""url"" : ""https://www.youtube.com/watch?v=HKJQwM0XCGc"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/HKJQwM0XCGc/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-24T22:40:45+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Japan | Hajime Moriyasu"",
+  ""url"" : ""https://www.youtube.com/watch?v=J1MX7UdZQfw"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/J1MX7UdZQfw/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-24T20:39:50+00:00""
+} ]",188,470,731,109,574,2462,1184,"2026-06-25T23:00:00+00:00","finished",3,"","Group F","FT",97,1,1,0,0,,,,,1,0,1,0,1,1,2,0,0,"2026-06-26T07:10:25.578Z"
+"Row58",8345,"Paraguay","Australia","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 14.3,
+  ""temperature_c"" : 29
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Paraguay | Gustavo Alfaro & Andres Cubas"",
+  ""url"" : ""https://www.youtube.com/watch?v=vwMeblfw3Es"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/vwMeblfw3Es/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-24T23:43:13+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Australia | Tony Popovic & Alessandro Circati"",
+  ""url"" : ""https://www.youtube.com/watch?v=rPmfQmT3u1s"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/rPmfQmT3u1s/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-24T20:23:26+00:00""
+} ]",188,458,459,90,571,2134,1181,"2026-06-26T02:00:00+00:00","finished",3,"","Group D","FT",90,0,0,0,0,,,,,,,,,,,,,,"2026-06-26T10:10:21.564Z"
+"Row59",8346,"Türkiye","USA","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 18.1,
+  ""temperature_c"" : 24
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — USA | Mauricio Pochettino"",
+  ""url"" : ""https://www.youtube.com/watch?v=aPCt_Su2z6E"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/aPCt_Su2z6E/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-25T00:22:03+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Türkiye | Vincenzo Montella & Kenan Yildiz"",
+  ""url"" : ""https://www.youtube.com/watch?v=3k1FuO9B844"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/3k1FuO9B844/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-25T00:07:59+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Top spot secured! — USMNT vs. Türkiye preview & predictions"",
+  ""url"" : ""https://youtu.be/d259K2wsFl4?t=626"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/d259K2wsFl4/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-24T06:56:07+00:00""
+} ]",188,932,457,581,122,2481,1180,"2026-06-26T02:00:00+00:00","finished",3,"","Group D","FT",90,3,2,2,2,,,,,,,,,,,,,,"2026-06-26T10:10:30.743Z"
+"Row60",8347,"Norway","France","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 15.1,
+  ""temperature_c"" : 19
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Norway | Ståle Solbakken"",
+  ""url"" : ""https://www.youtube.com/watch?v=Zb8JxCd_Lx4"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/Zb8JxCd_Lx4/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-26T02:07:43+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — France | Guy Stephan"",
+  ""url"" : ""https://www.youtube.com/watch?v=geZ-SQ8YBYw"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/geZ-SQ8YBYw/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-25T20:36:05+00:00""
+} ]",188,488,485,77,32,1756,273,"2026-06-26T19:00:00+00:00","finished",3,"","Group I","FT",95,1,4,1,3,,,,,1,0,0,1,1,4,5,0,1,"2026-06-27T03:10:28.002Z"
+"Row61",8348,"Senegal","Iraq","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 5.2,
+  ""temperature_c"" : 22
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Iraq | Graham Arnold"",
+  ""url"" : ""https://youtu.be/_on2BDbrFfE"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/_on2BDbrFfE/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-25T21:21:52+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Senegal | Pape Thiaw & Ismail Jakobs"",
+  ""url"" : ""https://www.youtube.com/watch?v=mQqlMjZy-9U"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/mQqlMjZy-9U/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-25T20:11:33+00:00""
+} ]",188,486,933,112,582,1757,275,"2026-06-26T19:00:00+00:00","finished",3,"","Group I","FT",96,5,0,1,0,,,,,1,1,0,0,5,0,5,1,0,"2026-06-27T03:10:34.140Z"
+"Row62",8349,"Cabo Verde","Saudi Arabia","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 16.4,
+  ""temperature_c"" : 29
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""Cabo Verde 0 - 0 Saudi Arabia — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=snrzO0rkrr0"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/snrzO0rkrr0/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-27T02:12:59+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""Cabo Verde 0 - 0 Saudi Arabia — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=6olRPReVjW8"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/6olRPReVjW8/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-27T02:10:46+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Cabo Verde | Bubista and Roberto Lopes"",
+  ""url"" : ""https://www.youtube.com/watch?v=eHOtq1BMK9s"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/eHOtq1BMK9s/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-26T02:32:46+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Saudi Arabia | Georgios Donis"",
+  ""url"" : ""https://youtu.be/NuV0JQuhbYM"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/NuV0JQuhbYM/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-25T22:04:06+00:00""
+} ]",188,476,479,1445,188,2113,1183,"2026-06-27T00:00:00+00:00","finished",3,"","Group H","FT",90,0,0,0,0,,,,,1,0,1,0,0,0,0,0,0,"2026-06-27T08:10:23.077Z"
+"Row63",8350,"Uruguay","Spain","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 5.6,
+  ""temperature_c"" : 22
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""Uruguay 0 - 1 Spain — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=5xiuUPnIAkk"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/5xiuUPnIAkk/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-27T02:13:17+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Uruguay | Marcelo Bielsa"",
+  ""url"" : ""https://www.youtube.com/watch?v=9zEbjdmb004"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/9zEbjdmb004/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-26T02:08:49+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Spain | Luis de la Fuente"",
+  ""url"" : ""https://www.youtube.com/watch?v=DkOCXWRjo54&pp=0gcJCT8LAYcqIYzv"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/DkOCXWRjo54/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-26T01:41:44+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Spain can finish third?! — Uruguay vs Spain match preview"",
+  ""url"" : ""https://youtu.be/IBhBwQHoVhw?is=kf-bYy1og1JwViYi"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/IBhBwQHoVhw/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-25T20:35:25+00:00""
+} ]",188,480,475,98,116,1771,307,"2026-06-27T00:00:00+00:00","finished",3,"","Group H","FT",90,0,1,0,1,,,,,1,0,0,1,0,1,1,0,1,"2026-06-27T08:10:34.050Z"
+"Row64",8351,"Egypt","Iran","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 14.5,
+  ""temperature_c"" : 18
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""Egypt 1 - 1 Iran — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=XJOM1Yny85U"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/XJOM1Yny85U/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-27T05:10:04+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Iran | Amir Ghalenoei & Alireza Beiranvand"",
+  ""url"" : ""https://www.youtube.com/watch?v=teQwsFKMiLA"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/teQwsFKMiLA/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-26T08:13:08+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Egypt | Hossam Hassan"",
+  ""url"" : ""https://www.youtube.com/watch?v=8oHDoSMyYHc&pp=0gcJCT8LAYcqIYzv"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/8oHDoSMyYHc/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-26T01:20:28+00:00""
+} ]",188,478,481,117,63,1855,290,"2026-06-27T03:00:00+00:00","finished",3,"","Group G","FT",90,1,1,1,1,,,,,,,,,,,,,,"2026-06-27T11:10:27.644Z"
+"Row65",8352,"New Zealand","Belgium","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 4.7,
+  ""temperature_c"" : 18
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Belgium | Rudi Garcia & Brandon Mechele"",
+  ""url"" : ""https://www.youtube.com/watch?v=F3EH2lJYMIg"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/F3EH2lJYMIg/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-26T09:04:37+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — New Zealand | Darren Bazeley & Liberato"",
+  ""url"" : ""https://www.youtube.com/watch?v=TFW3GIdjgvQ"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/TFW3GIdjgvQ/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-26T01:19:41+00:00""
+} ]",188,482,477,578,129,1722,266,"2026-06-27T03:00:00+00:00","finished",3,"","Group G","FT",90,1,5,0,1,,,,,,,,,,,,,,"2026-06-27T11:10:32.842Z"
+"Row66",8353,"Croatia","Ghana","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 18.2,
+  ""temperature_c"" : 29
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Ghana | Carlos Queiroz & Antoine Semenyo"",
+  ""url"" : ""https://www.youtube.com/watch?v=KDzjMqiroO0"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/KDzjMqiroO0/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-27T02:29:12+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Croatia | Zlatko Dalić & Ivan Perišić"",
+  ""url"" : ""https://www.youtube.com/watch?v=_Qj1bnQtg7g"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/_Qj1bnQtg7g/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-27T02:03:26+00:00""
+} ]",188,494,495,126,838,1769,1185,"2026-06-27T21:00:00+00:00","finished",3,"","Group L","FT",97,2,1,1,0,,,,,1,1,0,0,2,1,3,1,0,"2026-06-28T05:10:24.015Z"
+"Row67",8354,"Panama","England","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 26,
+  ""temperature_c"" : 29
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Panama | Thomas Christiansen"",
+  ""url"" : ""https://www.youtube.com/watch?v=AqHGf4qiY3U"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/AqHGf4qiY3U/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-27T01:04:58+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — England | Thomas Tuchel & Marc Guéhi"",
+  ""url"" : ""https://www.youtube.com/watch?v=zgs-AQwT0nE"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/zgs-AQwT0nE/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-26T23:35:32+00:00""
+} ]",188,496,493,88,108,2604,1182,"2026-06-27T21:00:00+00:00","finished",3,"","Group L","FT",96,0,2,0,0,,,,,2,0,0,2,1,8,4.5,0,1,"2026-06-28T05:10:32.667Z"
+"Row68",8356,"DR Congo","Uzbekistan","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 8.1,
+  ""temperature_c"" : 26
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — DR Congo | Sébastien Desabre"",
+  ""url"" : ""https://www.youtube.com/watch?v=iD7LrElXKxM"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/iD7LrElXKxM/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-27T02:27:45+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Uzbekistan | Fabio Cannavaro & Eldor Shomurodov"",
+  ""url"" : ""https://www.youtube.com/watch?v=gxJiC724EK4"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/gxJiC724EK4/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-27T02:26:53+00:00""
+} ]",188,648,497,583,575,1790,265,"2026-06-27T23:30:00+00:00","finished",3,"","Group K","FT",98,3,1,0,1,,,,,1,1,0,0,3,1,4,1,0,"2026-06-28T07:40:21.952Z"
+"Row69",8355,"Colombia","Portugal","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 18.8,
+  ""temperature_c"" : 31
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Colombia | Néstor Lorenzo"",
+  ""url"" : ""https://www.youtube.com/watch?v=QTthNU5rXJE"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/QTthNU5rXJE/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-27T02:30:46+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Portugal I Roberto Martinez"",
+  ""url"" : ""https://www.youtube.com/watch?v=BGjIs0luzIg"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/BGjIs0luzIg/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-26T18:35:02+00:00""
+} ]",188,498,491,31,123,2535,1186,"2026-06-27T23:30:00+00:00","finished",3,"","Group K","FT",95,0,0,0,0,,,,,1,0,1,0,0,0,0,0,0,"2026-06-28T07:40:32.160Z"
+"Row70",8357,"Algeria","Austria","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 7.3,
+  ""temperature_c"" : 26
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Austria | Ralf Rangnick & Konrad Laimer"",
+  ""url"" : ""https://www.youtube.com/watch?v=GnY0nIlsOh8"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/GnY0nIlsOh8/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-27T02:25:49+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Algeria | Vladimir Petković"",
+  ""url"" : ""https://www.youtube.com/watch?v=5yO5Lz1bGzc"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/5yO5Lz1bGzc/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-26T23:49:03+00:00""
+} ]",188,490,483,97,104,1714,1187,"2026-06-28T02:00:00+00:00","finished",3,"","Group J","FT",94,3,3,1,1,,,,,,,,,,,,,,"2026-06-28T10:10:23.144Z"
+"Row71",8358,"Jordan","Argentina","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 28.9,
+  ""temperature_c"" : 34
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Argentina | Lionel Scaloni"",
+  ""url"" : ""https://www.youtube.com/watch?v=-jVo42V9rkI"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/-jVo42V9rkI/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-27T02:09:29+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Jordan | Jamal Sellami & Noor Al-Rawabdeh"",
+  ""url"" : ""https://www.youtube.com/watch?v=LL_O1hce3w8"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/LL_O1hce3w8/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-27T00:17:23+00:00""
+} ]",188,484,489,85,124,1674,1184,"2026-06-28T02:00:00+00:00","finished",3,"","Group J","FT",95,1,3,0,2,,,,,,,,,,,,,,"2026-06-28T10:10:35.125Z"
+"Row72",8359,"South Africa","Canada","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 16,
+  ""temperature_c"" : 23
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — South Africa | Hugo Broos & Ime Okon"",
+  ""url"" : ""https://www.youtube.com/watch?v=Nt5rQt_mGAc"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/Nt5rQt_mGAc/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-28T02:44:45+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Canada | Jesse Marsch & Alphonso Davies"",
+  ""url"" : ""https://www.youtube.com/watch?v=WEsSWmhlnO0"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/WEsSWmhlnO0/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-28T00:50:58+00:00""
+} ]",188,452,455,87,130,2238,1180,"2026-06-28T19:00:00+00:00","finished",6,"Round of 32",,"FT",95,0,1,0,0,,,,,1,0,0,1,0,1,1,0,1,"2026-06-29T03:13:24.656Z"
+"Row73",8360,"Brazil","Japan","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 10.2,
+  ""temperature_c"" : 32
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""Brazil 2 - 1 Japan — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=G7Sb_3BtW5A"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/G7Sb_3BtW5A/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-29T19:14:03+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Japan | Hajime Moriyasu"",
+  ""url"" : ""https://www.youtube.com/watch?v=lyyDdlkunIE"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/lyyDdlkunIE/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-29T03:56:36+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Brazil | Carlo Ancelotti"",
+  ""url"" : ""https://www.youtube.com/watch?v=XtARtHDP_Ww"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/XtARtHDP_Ww/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-29T02:39:23+00:00""
+} ]",188,463,470,127,109,2345,1183,"2026-06-29T17:00:00+00:00","finished",6,"Round of 32",,"FT",96,2,1,0,1,,,,,,,,,,,,,,"2026-06-30T01:03:54.794Z"
+"Row74",8361,"Germany","Paraguay","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 16.8,
+  ""temperature_c"" : 24
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Germany | Julian Nagelsmann & Kai Havertz"",
+  ""url"" : ""https://www.youtube.com/watch?v=X3MrMcMx16A"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/X3MrMcMx16A/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-29T03:09:40+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Paraguay | Gustavo Alfaro & Gustavo Gomez"",
+  ""url"" : ""https://www.youtube.com/watch?v=NB3oVV8DLu4"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/NB3oVV8DLu4/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-29T01:29:50+00:00""
+} ]",188,467,458,51,90,2477,273,"2026-06-29T20:30:00+00:00","finished",6,"Round of 32",,"FT",95,1,1,0,1,3,4,,,1,0,1,0,1,1,2,0,0,"2026-06-30T04:33:53.188Z"
+"Row75",8362,"Netherlands","Morocco","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 19.4,
+  ""temperature_c"" : 28
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Netherlands  | Ronald Koeman & Virgil van Dijk"",
+  ""url"" : ""https://www.youtube.com/watch?v=VDPurTpiAA8"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/VDPurTpiAA8/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-29T07:28:24+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Morocco | Mohamed Ouahbi & Yassine Bounou"",
+  ""url"" : ""https://www.youtube.com/watch?v=uWxPAyoYrjY"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/uWxPAyoYrjY/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-29T03:40:05+00:00""
+} ]",188,469,464,102,89,1932,304,"2026-06-30T01:00:00+00:00","finished",6,"Round of 32",,"FT",90,1,1,0,0,,,,,,,,,,,,,,"2026-06-30T09:03:52.980Z"
+"Row76",8363,"Côte d'Ivoire","Norway","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 17.7,
+  ""temperature_c"" : 32
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Norway | Ståle Solbakken"",
+  ""url"" : ""https://www.youtube.com/watch?v=poBnF57Dsb8"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/poBnF57Dsb8/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-30T04:35:16+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Cote d'Ivoire | Emerse Fae & Yan Diomande"",
+  ""url"" : ""https://www.youtube.com/watch?v=ounjjNIxQJ0"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/ounjjNIxQJ0/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-29T21:39:05+00:00""
+} ]",188,471,488,96,77,2118,1184,"2026-06-30T17:00:00+00:00","finished",6,"Round of 32",,"FT",90,1,2,0,1,,,,,,,,,,,,,,"2026-07-01T01:03:53.525Z"
+"Row77",8364,"France","Sweden","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 20.5,
+  ""temperature_c"" : 34
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""France 3 - 0 Sweden — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=tEsTuOTKGMg"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/tEsTuOTKGMg/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-30T22:58:57+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Sweden | Graham Potter & Victor Lindelöf"",
+  ""url"" : ""https://www.youtube.com/watch?v=Wzk-sGkRHPo"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/Wzk-sGkRHPo/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-29T22:19:01+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — France | Didier Deschamps"",
+  ""url"" : ""https://www.youtube.com/watch?v=x1LKTbHEdp0"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/x1LKTbHEdp0/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-29T19:20:30+00:00""
+} ]",188,485,731,32,574,2251,1182,"2026-06-30T21:00:00+00:00","finished",6,"Round of 32",,"FT",94,3,0,1,0,,,,,1,1,0,0,3,0,3,1,0,"2026-07-01T05:03:54.613Z"
+"Row78",8365,"Mexico","Ecuador","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 8.7,
+  ""temperature_c"" : 16
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""Mexico 2 - 0 Ecuador — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=NBd4gIaCag4"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/NBd4gIaCag4/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-01T04:13:42+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""Mexico 2 - 0 Ecuador — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=MRcjGT85OXY"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/MRcjGT85OXY/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-01T04:10:48+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""Mexico 2 - 0 Ecuador — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=0ay3fUQBhTo"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/0ay3fUQBhTo/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-01T04:09:44+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Ecuador | Sebastián Beccacece & Gonzalo Valle"",
+  ""url"" : ""https://www.youtube.com/watch?v=Fk3lW1HXmN0"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/Fk3lW1HXmN0/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-30T07:33:26+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Mexico | Javier Aguirre Onaindía"",
+  ""url"" : ""https://www.youtube.com/watch?v=YyshBwzwrpw&pp=0gcJCU4LAYcqIYzv"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/YyshBwzwrpw/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-29T23:54:26+00:00""
+} ]",188,451,472,128,103,2386,295,"2026-07-01T02:00:00+00:00","finished",6,"Round of 32",,"FT",97,2,0,2,0,,,,,1,0,1,0,0,0,0,0,0,"2026-07-01T10:03:53.447Z"
+"Row79",8366,"England","DR Congo","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 13.4,
+  ""temperature_c"" : 31
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""England 2 - 1 DR Congo — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=OKa8WiywIIY"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/OKa8WiywIIY/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-01T18:13:14+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""England 2 - 1 DR Congo — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=A3jqrkkmt6I"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/A3jqrkkmt6I/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-01T18:11:03+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""England 2 - 1 DR Congo — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=uBVEGmQuQu4"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/uBVEGmQuQu4/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-01T18:09:58+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — England | Thomas Tuchel & Jordan Pickford"",
+  ""url"" : ""https://www.youtube.com/watch?v=nP7CpUfDbBg"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/nP7CpUfDbBg/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-01T01:02:33+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Congo DR | Sébastien Desabre"",
+  ""url"" : ""https://www.youtube.com/watch?v=QWiVIW3F2Ng"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/QWiVIW3F2Ng/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-30T22:18:48+00:00""
+} ]",188,493,648,108,583,1722,265,"2026-07-01T16:00:00+00:00","finished",6,"Round of 32",,"FT",90,2,1,0,1,,,,,,,,,,,,,,"2026-07-02T00:03:58.757Z"
+"Row80",8367,"Belgium","Senegal","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 12,
+  ""temperature_c"" : 20
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""Belgium 3 - 2 Senegal — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=q6kw2eBezGE"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/q6kw2eBezGE/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-01T22:54:04+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Senegal | Pape Thiaw & Mamadou Sarr"",
+  ""url"" : ""https://www.youtube.com/watch?v=FOgMmkTG07Q"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/FOgMmkTG07Q/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-01T09:46:31+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Belgium | Rudi Garcia & Charles De Ketelaere"",
+  ""url"" : ""https://www.youtube.com/watch?v=QkuyrU3aUCs"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/QkuyrU3aUCs/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-30T23:08:12+00:00""
+} ]",188,477,486,129,112,2634,290,"2026-07-01T20:00:00+00:00","finished",6,"Round of 32",,"FT",97,2,2,0,1,,,,,1,0,1,0,2,2,4,0,0,"2026-07-02T04:03:57.892Z"
+"Row81",8368,"USA","Bosnia & Herzegovina","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 18.6,
+  ""temperature_c"" : 30
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Bosnia And Herzegovina | Sergej Barbarez"",
+  ""url"" : ""https://www.youtube.com/watch?v=73JikurQAYc"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/73JikurQAYc/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-01T01:01:46+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — USA | Mauricio Pochettino"",
+  ""url"" : ""https://www.youtube.com/watch?v=iGVv_P8__jM"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/iGVv_P8__jM/hqdefault.jpg"",
+  ""published_at"" : ""2026-06-30T23:21:42+00:00""
+} ]",188,457,931,122,580,1616,1181,"2026-07-02T00:00:00+00:00","finished",6,"Round of 32",,"FT",90,2,0,1,0,,,,,1,1,0,0,2,0,2,1,0,"2026-07-02T08:03:54.166Z"
+"Row82",8369,"Spain","Austria","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 13.8,
+  ""temperature_c"" : 25
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press — Austria | Ralf Rangnick & David Alaba"",
+  ""url"" : ""https://www.youtube.com/watch?v=wg5H20vs3wI"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/wg5H20vs3wI/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-02T02:17:06+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Spain | Luis de la Fuente"",
+  ""url"" : ""https://www.youtube.com/watch?v=V-AoBMS_lc4"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/V-AoBMS_lc4/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-01T23:48:56+00:00""
+} ]",188,475,483,116,104,2039,1180,"2026-07-02T19:00:00+00:00","finished",6,"Round of 32",,"FT",96,3,0,1,0,,,,,1,1,0,0,3,0,3,1,0,"2026-07-03T03:03:54.630Z"
+"Row83",8370,"Portugal","Croatia","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 2.9,
+  ""temperature_c"" : 27
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Croatia | Zlatko Dalić & Dominik Livakovic"",
+  ""url"" : ""https://www.youtube.com/watch?v=ZHatpSXCwZQ"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/ZHatpSXCwZQ/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-01T22:25:18+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Portugal | Roberto Martínez"",
+  ""url"" : ""https://www.youtube.com/watch?v=7CCX5mQbZK8"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/7CCX5mQbZK8/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-01T21:45:54+00:00""
+} ]",188,491,494,123,126,1639,275,"2026-07-02T23:00:00+00:00","finished",6,"Round of 32",,"FT",100,2,1,0,0,,,,,1,1,0,0,2,1,3,1,0,"2026-07-03T07:03:54.737Z"
+"Row84",8371,"Switzerland","Algeria","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 10,
+  ""temperature_c"" : 18
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Algeria | Vladimir Petković"",
+  ""url"" : ""https://www.youtube.com/watch?v=GR3BWW8Ogmc"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/GR3BWW8Ogmc/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-02T02:34:00+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Switzerland | Murat Yakin & Breel Embolo"",
+  ""url"" : ""https://www.youtube.com/watch?v=xPZKpkuJFZs"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/xPZKpkuJFZs/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-01T23:04:25+00:00""
+} ]",188,462,490,78,97,2107,266,"2026-07-03T03:00:00+00:00","finished",6,"Round of 32",,"FT",96,2,0,1,0,,,,,,,,,,,,,,"2026-07-03T11:03:54.820Z"
+"Row85",8372,"Australia","Egypt","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 5.8,
+  ""temperature_c"" : 36
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Australia | Tony Popovic & Aiden O'Neill"",
+  ""url"" : ""https://www.youtube.com/watch?v=V8bXnogWz8U&pp=0gcJCUwLAYcqIYzv"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/V8bXnogWz8U/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-03T02:34:30+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Egypt | Hossam Hassan"",
+  ""url"" : ""https://www.youtube.com/watch?v=JixG46tN-wg"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/JixG46tN-wg/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-03T02:33:41+00:00""
+} ]",188,459,478,571,117,2106,1184,"2026-07-03T18:00:00+00:00","finished",6,"Round of 32",,"PEN",125,1,1,0,1,2,4,0,0,,,,,,,,,,"2026-07-04T02:04:00.585Z"
+"Row86",8373,"Argentina","Cabo Verde","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 21.8,
+  ""temperature_c"" : 32
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""Argentina 3 - 2 Cabo Verde — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=MbrJsqyTmfI&pp=0gcJCUwLAYcqIYzv"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/MbrJsqyTmfI/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-04T00:58:12+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""Argentina 3 - 2 Cabo Verde — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=m4w14Z0tU78"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/m4w14Z0tU78/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-04T00:56:05+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""Argentina 3 - 2 Cabo Verde — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=XS4aUyHdnkE"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/XS4aUyHdnkE/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-04T00:55:15+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Cabo Verde | Pedro Leitão Brito & Stopira"",
+  ""url"" : ""https://www.youtube.com/watch?v=gvVDBs3MVaA"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/gvVDBs3MVaA/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-03T16:52:52+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Argentina | Lionel Scaloni"",
+  ""url"" : ""https://www.youtube.com/watch?v=8WUaQUiczmw"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/8WUaQUiczmw/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-02T20:34:23+00:00""
+} ]",188,489,476,124,1445,1769,1186,"2026-07-03T22:00:00+00:00","finished",6,"Round of 32",,"AET",128,1,1,1,0,,,2,1,1,1,0,0,3,2,5,1,0,"2026-07-04T06:03:55.270Z"
+"Row87",8374,"Colombia","Ghana","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 13,
+  ""temperature_c"" : 29
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""Colombia 1 - 0 Ghana — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=HcsUuOFHxaQ"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/HcsUuOFHxaQ/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-04T03:41:42+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Colombia | Néstor Gabriel Lorenzo"",
+  ""url"" : ""https://www.youtube.com/watch?v=o2GTZ9knLXA"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/o2GTZ9knLXA/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-03T16:53:27+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Ghana | Carlos Queiroz & Jordan Ayew"",
+  ""url"" : ""https://www.youtube.com/watch?v=dWlIYUkrqfw"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/dWlIYUkrqfw/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-03T02:35:17+00:00""
+} ]",188,498,495,31,838,2134,1187,"2026-07-04T01:30:00+00:00","finished",6,"Round of 32",,"FT",96,1,0,1,0,,,,,,,,,,,,,,"2026-07-04T09:33:55.311Z"
+"Row88",8375,"Canada","Morocco","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 9,
+  ""temperature_c"" : 34
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""Canada 0 - 3 Morocco — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=q5iMk_KcFVA"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/q5iMk_KcFVA/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-04T19:12:09+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""Canada 0 - 3 Morocco — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=Rcv5k9Ll-ZQ"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/Rcv5k9Ll-ZQ/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-04T19:09:37+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Morocco  | Mohamed Ouahbi"",
+  ""url"" : ""https://www.youtube.com/watch?v=0P-aOqtzPUk"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/0P-aOqtzPUk/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-03T22:06:25+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Canada | Jesse Marsch & Alistair Johnston"",
+  ""url"" : ""https://www.youtube.com/watch?v=VKB2YWOTIT0"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/VKB2YWOTIT0/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-03T20:34:12+00:00""
+} ]",188,455,464,130,89,1756,1183,"2026-07-04T17:00:00+00:00","finished",5,"Round of 16",,"FT",98,0,3,0,0,,,,,1,0,0,1,1,2,3,0,1,"2026-07-05T01:03:55.748Z"
+"Row89",8376,"Paraguay","France","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 19.9,
+  ""temperature_c"" : 28
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""Paraguay 0 - 1 France — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=o-JyDcVUDYU"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/o-JyDcVUDYU/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-04T23:14:14+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""Paraguay 0 - 1 France — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=JDPgsFfF99k"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/JDPgsFfF99k/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-04T23:13:52+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""Paraguay 0 - 1 France — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=WTJfELaAYgM"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/WTJfELaAYgM/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-04T23:08:56+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — France | Didier Deschamps Takes Questions"",
+  ""url"" : ""https://www.youtube.com/watch?v=F5ZWOCMeCMY"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/F5ZWOCMeCMY/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-04T06:09:11+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Paraguay | Gustavo Alfaro & Júnior Alonso"",
+  ""url"" : ""https://www.youtube.com/watch?v=1IgDzNMz7Y4&pp=0gcJCU4LAYcqIYzv"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/1IgDzNMz7Y4/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-03T21:43:20+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Are they unstoppable? — How FRANCE can make a run to the World Cup final"",
+  ""url"" : ""https://www.youtube.com/watch?v=CNXxbl_YFUc"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/CNXxbl_YFUc/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-02T14:59:25+00:00""
+} ]",188,458,485,90,32,1714,1185,"2026-07-04T21:00:00+00:00","finished",5,"Round of 16",,"FT",100,0,1,0,0,,,,,1,0,0,1,0,1,1,0,1,"2026-07-05T05:03:55.803Z"
+"Row90",8377,"Brazil","Norway","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 18.2,
+  ""temperature_c"" : 31
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""Brazil 1 - 2 Norway — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=NmMTPxgVHhQ&pp=0gcJCUwLAYcqIYzv"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/NmMTPxgVHhQ/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-05T22:13:54+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Brazil | Carlo Ancelotti"",
+  ""url"" : ""https://www.youtube.com/watch?v=5Q1_wbr1pXQ"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/5Q1_wbr1pXQ/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-04T21:51:17+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Norway | Ståle Solbakken"",
+  ""url"" : ""https://www.youtube.com/watch?v=qtmLshgQg48"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/qtmLshgQg48/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-04T21:37:09+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Who has the edge? — Brazil vs. Norway | World Cup Round of 16 match preview"",
+  ""url"" : ""https://youtu.be/SY8g7M9Mb4U?is=2SXX8dvizs1L8aU7"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/SY8g7M9Mb4U/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-03T18:05:59+00:00""
+} ]",188,463,488,127,77,1771,1182,"2026-07-05T20:00:00+00:00","finished",5,"Round of 16",,"FT",97,1,2,0,0,,,,,1,0,0,1,1,2,3,0,1,"2026-07-06T04:00:12.457Z"
+"Row91",8378,"Mexico","England","{
+  ""code"" : 3,
+  ""description"" : ""rain"",
+  ""wind_speed"" : 7.2,
+  ""temperature_c"" : 21
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — England | Thomas Tuchel & Jordan Henderson"",
+  ""url"" : ""https://www.youtube.com/watch?v=-zhoUWSetfU"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/-zhoUWSetfU/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-05T06:44:32+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Mexico | Javier Aguirre"",
+  ""url"" : ""https://www.youtube.com/watch?v=WvRhVzfoLsg"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/WvRhVzfoLsg/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-04T22:35:44+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""England’s best #9 — Is Harry Kane England’s most important player this World Cup?"",
+  ""url"" : ""https://www.youtube.com/watch?v=H-fT-YuwPmc"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/H-fT-YuwPmc/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-02T15:03:17+00:00""
+} ]",188,451,493,128,108,2535,295,"2026-07-06T01:00:00+00:00","finished",5,"Round of 16",,"FT",101,2,3,1,2,,,,,,,,,,,,,,"2026-07-06T09:04:33.989Z"
+"Row92",8379,"Portugal","Spain","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 16.4,
+  ""temperature_c"" : 37
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""Portugal 0 - 1 Spain — Full Highlights"",
+  ""url"" : ""https://youtu.be/g86NBhoCtoM"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/g86NBhoCtoM/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-06T21:13:18+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Spain | Luis de la Fuente Castillo"",
+  ""url"" : ""https://www.youtube.com/watch?v=tYU3rCs0q-c"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/tYU3rCs0q-c/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-05T22:05:46+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Portugal | Cristiano Ronaldo & Roberto Msrtinez"",
+  ""url"" : ""https://www.youtube.com/watch?v=-Wh5SSCnmL0"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/-Wh5SSCnmL0/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-05T20:43:50+00:00""
+} ]",188,491,475,123,116,1757,1184,"2026-07-06T19:00:00+00:00","finished",5,"Round of 16",,"FT",96,0,1,0,0,,,,,2,0,1,1,3,4,3.5,0,0.5,"2026-07-07T03:04:35.008Z"
+"Row93",8380,"USA","Belgium","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 12.9,
+  ""temperature_c"" : 31
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""USA 1 - 4 Belgium — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=6XC_jdkGtb0"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/6XC_jdkGtb0/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-07T02:07:52+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""USA 1 - 4 Belgium — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=5c2KWpjOuWw"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/5c2KWpjOuWw/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-07T02:07:08+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — USA | Mauricio Pochettino"",
+  ""url"" : ""https://www.youtube.com/watch?v=fmZxBtL3TYE"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/fmZxBtL3TYE/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-05T22:46:41+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Belgium | Rudi Garcia & Thibaut Courtois"",
+  ""url"" : ""https://www.youtube.com/watch?v=oDeX46Ge2lo"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/oDeX46Ge2lo/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-05T21:34:12+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""No Balogun, no problem? — Ricardo Pepi to start up front?"",
+  ""url"" : ""https://youtu.be/1nHIe7iko-Y?is=L3U3KUAIfue04cKI"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/1nHIe7iko-Y/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-03T16:02:27+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""2014 rematch — The Belgium scouting report | What USMNT fans need to know"",
+  ""url"" : ""https://youtu.be/EipsOYRjBro?is=Lj-j1eiiA8AfwjpN"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/EipsOYRjBro/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-03T16:01:56+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Road to the final — How USA can make a run to the World Cup final?"",
+  ""url"" : ""https://www.youtube.com/watch?v=xVC74Nty5og&feature=youtu.be"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/xVC74Nty5og/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-02T19:00:33+00:00""
+} ]",188,457,477,122,129,1722,290,"2026-07-07T00:00:00+00:00","finished",5,"Round of 16",,"FT",94,1,4,1,2,,,,,1,0,0,1,1,4,5,0,1,"2026-07-07T08:04:34.696Z"
+"Row94",8381,"Argentina","Egypt","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 10.6,
+  ""temperature_c"" : 34
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Argentina | Lionel Scaloni"",
+  ""url"" : ""https://www.youtube.com/watch?v=f9LBnDE6Xvg"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/f9LBnDE6Xvg/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-07T00:42:42+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Egypt | Hossam Hassan"",
+  ""url"" : ""https://youtu.be/e_G7zaxxKbw"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/e_G7zaxxKbw/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-06T21:37:06+00:00""
+} ]",188,489,478,124,117,2113,265,"2026-07-07T16:00:00+00:00","finished",5,"Round of 16",,"FT",97,3,2,0,1,,,,,,,,,,,,,,"2026-07-08T00:04:34.995Z"
+"Row95",8382,"Switzerland","Colombia","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 10.7,
+  ""temperature_c"" : 22
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Switzerland | Murat Yakin & Nico Elvedi"",
+  ""url"" : ""https://www.youtube.com/watch?v=4XYr-ZqUpXY"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/4XYr-ZqUpXY/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-07T01:54:20+00:00""
+} ]",188,462,498,78,31,2462,266,"2026-07-07T20:00:00+00:00","finished",5,"Round of 16",,"FT",125,0,0,0,0,4,3,,,1,0,1,0,0,0,0,0,0,"2026-07-08T04:04:35.722Z"
+"Row96",8383,"France","Morocco","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 20.9,
+  ""temperature_c"" : 31
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""France 2 - 0 Morocco — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=q2y2ySuvTDQ"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/q2y2ySuvTDQ/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-09T22:09:01+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""France 2 - 0 Morocco — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=vFH-h-4P0Bk"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/vFH-h-4P0Bk/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-09T22:03:28+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Morocco | Mohamed Ouahbi & Brahim Diaz"",
+  ""url"" : ""https://www.youtube.com/watch?v=xQDXv5T5e-A"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/xQDXv5T5e-A/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-09T01:58:10+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — France | Didier Deschamps"",
+  ""url"" : ""https://youtu.be/eJ-GTtHzK4E"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/eJ-GTtHzK4E/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-08T22:32:28+00:00""
+} ]",188,485,464,32,89,2401,273,"2026-07-09T20:00:00+00:00","finished",27,"Quarterfinals",,"FT",96,2,0,0,0,,,,,1,1,0,0,2,0,2,1,0,"2026-07-10T04:01:22.602Z"
+"Row97",8384,"Spain","Belgium","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 14.7,
+  ""temperature_c"" : 22
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Belgium | Rudi Garcia & Romelu Lukaku"",
+  ""url"" : ""https://www.youtube.com/watch?v=yngne7i0XAo"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/yngne7i0XAo/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-10T06:35:08+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Spain | Luis de la Fuente"",
+  ""url"" : ""https://www.youtube.com/watch?v=ITkFw8LLfac"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/ITkFw8LLfac/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-10T01:55:18+00:00""
+} ]",188,475,477,116,129,1756,1180,"2026-07-10T19:00:00+00:00","finished",27,"Quarterfinals",,"FT",97,2,1,1,1,,,,,1,1,0,0,2,1,3,1,0,"2026-07-11T03:01:23.505Z"
+"Row98",8385,"Norway","England","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 23.5,
+  ""temperature_c"" : 33
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""Norway 1 - 2 England — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=5YnD-cHqdm4"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/5YnD-cHqdm4/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-12T00:00:15+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""Norway 1 - 2 England — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=lQOSnrFyHpU"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/lQOSnrFyHpU/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-11T23:58:37+00:00""
+}, {
+  ""kind"" : ""full"",
+  ""title"" : ""Norway 1 - 2 England — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=jfmXug0cDd4"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/jfmXug0cDd4/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-11T23:58:00+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — England | Thomas Tuchel And Harry Kane"",
+  ""url"" : ""https://www.youtube.com/watch?v=QA2hs_b2QvU&pp=0gcJCU8LAYcqIYzv"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/QA2hs_b2QvU/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-11T04:38:00+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Norway | Ståle Solbakken"",
+  ""url"" : ""https://www.youtube.com/watch?v=YhZ6h9saOxg"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/YhZ6h9saOxg/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-10T22:07:51+00:00""
+} ]",188,488,493,77,108,2134,1186,"2026-07-11T21:00:00+00:00","finished",27,"Quarterfinals",,"AET",127,1,1,1,1,,,0,1,1,0,0,1,1,2,3,0,1,"2026-07-12T05:01:23.405Z"
+"Row99",8386,"Argentina","Switzerland","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 11,
+  ""temperature_c"" : 27
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Argentina | Lionel Scaloni"",
+  ""url"" : ""https://www.youtube.com/watch?v=DpkXiBrwCvY"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/DpkXiBrwCvY/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-11T17:39:40+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Switzerland | Murat Yakin & Granit Xhaka"",
+  ""url"" : ""https://www.youtube.com/watch?v=-mupWoOHvGw&pp=0gcJCU8LAYcqIYzv"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/-mupWoOHvGw/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-11T03:45:28+00:00""
+} ]",188,489,462,124,78,2238,1187,"2026-07-12T01:00:00+00:00","finished",27,"Quarterfinals",,"AET",129,1,1,1,0,,,2,0,,,,,,,,,,"2026-07-12T09:01:23.971Z"
+"Row100",8387,"France","Spain","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 5.1,
+  ""temperature_c"" : 43
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Spain | Luis de la Fuente"",
+  ""url"" : ""https://www.youtube.com/watch?v=MB9sGII-hpM"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/MB9sGII-hpM/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-13T23:47:17+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — France | Didier Deschamps"",
+  ""url"" : ""https://www.youtube.com/watch?v=ThxWqegwYmM"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/ThxWqegwYmM/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-13T23:10:40+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Match preview — Lamine Yamal vs Kylian Mbappé | France vs Spain World Cup semifinal preview"",
+  ""url"" : ""https://youtu.be/hZfcAfSSarA?is=EsWDHGcGBc48kX_I"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/hZfcAfSSarA/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-11T06:33:12+00:00""
+} ]",188,485,475,32,116,2462,1184,"2026-07-14T19:00:00+00:00","finished",28,"Semifinals",,"FT",97,0,2,0,1,,,,,1,0,0,1,4,5,9,0,1,"2026-07-14T21:55:35.004Z"
+"Row101",8388,"England","Argentina","{
+  ""code"" : 2,
+  ""description"" : ""cloudy"",
+  ""wind_speed"" : 15.3,
+  ""temperature_c"" : 34
+}","[ {
+  ""kind"" : ""full"",
+  ""title"" : ""England 1 - 2 Argentina — Full Highlights"",
+  ""url"" : ""https://www.youtube.com/watch?v=-3VMGQgLuPg"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/-3VMGQgLuPg/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-15T21:15:09+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — England | Thomas Tuchel"",
+  ""url"" : ""https://www.youtube.com/watch?v=TFF5pZILkTA&pp=0gcJCVELAYcqIYzv"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/TFF5pZILkTA/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-15T02:56:17+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Argentina | Lionel Scaloni"",
+  ""url"" : ""https://www.youtube.com/watch?v=jRovVLxsIjU"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/jRovVLxsIjU/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-15T02:55:37+00:00""
+} ]",188,493,489,108,124,1771,265,"2026-07-15T19:00:00+00:00","finished",28,"Semifinals",,"FT",99,1,2,0,0,,,,,2,0,1,1,2,3,2.5,0,0.5,"2026-07-16T03:00:09.880Z"
+"Row102",8389,"France","England","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 21.4,
+  ""temperature_c"" : 34
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — England | Thomas Tuchel & John Stones"",
+  ""url"" : ""https://www.youtube.com/watch?v=j4U6KdB4cI0"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/j4U6KdB4cI0/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-18T01:43:07+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — France | Didier Deschamps"",
+  ""url"" : ""https://www.youtube.com/watch?v=686_bAx_BP4"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/686_bAx_BP4/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-17T18:14:18+00:00""
+} ]",188,485,493,32,108,2118,1186,"2026-07-18T21:00:00+00:00","finished",50,"Match for 3rd place",,"FT",97,4,6,0,4,,,,,1,0,0,1,4,6,10,0,1,"2026-07-19T05:00:06.640Z"
+"Row103",8390,"Spain","Argentina","{
+  ""code"" : 1,
+  ""description"" : ""clear"",
+  ""wind_speed"" : 24.7,
+  ""temperature_c"" : 34
+}","[ {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Argentina | Lionel Scaloni"",
+  ""url"" : ""https://www.youtube.com/watch?v=DV_N80QxPDY"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/DV_N80QxPDY/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-18T01:20:24+00:00""
+}, {
+  ""kind"" : ""clip"",
+  ""title"" : ""Press Conference — Spain | Luis De La Fuente"",
+  ""url"" : ""https://www.youtube.com/watch?v=PAer7GKJ_ks"",
+  ""thumbnail"" : ""https://i.ytimg.com/vi/PAer7GKJ_ks/hqdefault.jpg"",
+  ""published_at"" : ""2026-07-18T00:50:23+00:00""
+} ]",188,475,489,116,124,2386,1182,"2026-07-19T19:00:00+00:00","finished",29,"Final",,"AET",124,0,0,0,0,,,1,0,1,1,0,0,1,0,1,1,0,"2026-07-20T03:00:05.639Z"

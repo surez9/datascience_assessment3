@@ -1,0 +1,105 @@
+match_id,date,stage,home_team,away_team,rank_gap,form_gf_diff,form_ga_diff,form_pts_diff,rest_days_diff,host_adv,strong_confed_diff,debutant_diff,goal_diff
+8287,2026-06-11,Group A,Mexico,South Africa,46,0.0,0.0,0.0,0.0,1,0,0,2
+8288,2026-06-12,Group A,South Korea,Czechia,15,0.0,0.0,0.0,0.0,0,-1,0,1
+8289,2026-06-12,Group B,Canada,Bosnia & Herzegovina,34,0.0,0.0,0.0,0.0,1,-1,0,0
+8290,2026-06-13,Group D,USA,Paraguay,24,0.0,0.0,0.0,0.0,1,-1,0,3
+8292,2026-06-13,Group B,Qatar,Switzerland,-37,0.0,0.0,0.0,0.0,0,-1,0,0
+8293,2026-06-13,Group C,Brazil,Morocco,1,0.0,0.0,0.0,0.0,0,1,0,0
+8294,2026-06-14,Group C,Haiti,Scotland,-41,0.0,0.0,0.0,0.0,0,-1,0,-1
+8291,2026-06-14,Group D,Australia,Türkiye,-5,0.0,0.0,0.0,0.0,0,-1,0,2
+8295,2026-06-14,Group E,Germany,Curaçao,72,0.0,0.0,0.0,0.0,0,1,-1,6
+8296,2026-06-14,Group F,Netherlands,Japan,10,0.0,0.0,0.0,0.0,0,1,0,0
+8297,2026-06-14,Group E,Côte d'Ivoire,Ecuador,-10,0.0,0.0,0.0,0.0,0,-1,0,1
+8298,2026-06-15,Group F,Sweden,Tunisia,7,0.0,0.0,0.0,0.0,0,1,0,4
+8299,2026-06-15,Group H,Spain,Cabo Verde,65,0.0,0.0,0.0,0.0,0,1,-1,0
+8300,2026-06-15,Group G,Belgium,Egypt,20,0.0,0.0,0.0,0.0,0,1,0,0
+8301,2026-06-15,Group H,Saudi Arabia,Uruguay,-45,0.0,0.0,0.0,0.0,0,-1,0,0
+8302,2026-06-16,Group G,Iran,New Zealand,65,0.0,0.0,0.0,0.0,0,0,0,0
+8304,2026-06-16,Group I,France,Senegal,12,0.0,0.0,0.0,0.0,0,1,0,2
+8305,2026-06-16,Group I,Iraq,Norway,-26,0.0,0.0,0.0,0.0,0,-1,0,-3
+8306,2026-06-17,Group J,Argentina,Algeria,27,0.0,0.0,0.0,0.0,0,1,0,3
+8303,2026-06-17,Group J,Austria,Jordan,39,0.0,0.0,0.0,0.0,0,1,-1,2
+8307,2026-06-17,Group K,Portugal,DR Congo,41,0.0,0.0,0.0,0.0,0,1,0,0
+8308,2026-06-17,Group L,England,Croatia,7,0.0,0.0,0.0,0.0,0,0,0,2
+8309,2026-06-17,Group L,Ghana,Panama,-39,0.0,0.0,0.0,0.0,0,0,0,1
+8310,2026-06-18,Group K,Uzbekistan,Colombia,-37,0.0,0.0,0.0,0.0,0,-1,1,-2
+8311,2026-06-18,Group A,Czechia,South Africa,20,1.0,0.0,0.0,-0.29,0,1,0,0
+8312,2026-06-18,Group B,Switzerland,Bosnia & Herzegovina,45,0.0,0.0,0.0,-1.0,0,0,0,3
+8313,2026-06-18,Group B,Canada,Qatar,26,0.0,0.0,0.0,1.0,1,0,0,6
+8314,2026-06-19,Group A,Mexico,South Korea,11,0.0,-1.0,0.0,0.29,1,0,0,1
+8316,2026-06-19,Group D,USA,Australia,10,2.0,1.0,0.0,1.12,1,0,0,2
+8317,2026-06-19,Group C,Scotland,Morocco,-35,0.0,-1.0,2.0,-0.12,0,1,0,-1
+8318,2026-06-20,Group C,Brazil,Haiti,77,1.0,0.0,1.0,0.12,0,1,0,3
+8315,2026-06-20,Group D,Türkiye,Paraguay,19,-1.0,-2.0,0.0,-1.12,0,0,0,-1
+8320,2026-06-20,Group F,Netherlands,Sweden,30,-3.0,1.0,-2.0,0.25,0,0,0,4
+8321,2026-06-20,Group E,Germany,Côte d'Ivoire,23,6.0,1.0,0.0,0.25,0,1,0,1
+8322,2026-06-21,Group E,Ecuador,Curaçao,59,-1.0,-6.0,0.0,-0.25,0,1,-1,0
+8319,2026-06-21,Group F,Tunisia,Japan,-27,-1.0,3.0,-1.0,-0.25,0,0,0,-4
+8323,2026-06-21,Group H,Spain,Saudi Arabia,59,-1.0,-1.0,0.0,0.25,0,1,0,4
+8324,2026-06-21,Group G,Belgium,Iran,11,-1.0,-1.0,0.0,0.25,0,1,0,0
+8325,2026-06-21,Group H,Uruguay,Cabo Verde,51,1.0,1.0,0.0,-0.25,0,1,-1,0
+8326,2026-06-22,Group G,New Zealand,Egypt,-56,1.0,1.0,0.0,-0.25,0,0,0,-2
+8327,2026-06-22,Group J,Argentina,Austria,23,0.0,-1.0,0.0,0.12,0,0,0,2
+8328,2026-06-22,Group I,France,Iraq,54,2.0,-3.0,3.0,0.12,0,1,0,3
+8329,2026-06-23,Group I,Norway,Senegal,-16,3.0,-2.0,3.0,-0.12,0,1,0,1
+8330,2026-06-23,Group J,Jordan,Algeria,-35,1.0,0.0,0.0,-0.12,0,0,1,-1
+8331,2026-06-23,Group K,Portugal,Uzbekistan,45,0.0,-2.0,1.0,0.38,0,1,-1,5
+8332,2026-06-23,Group L,England,Ghana,69,3.0,2.0,0.0,0.12,0,1,0,0
+8333,2026-06-23,Group L,Panama,Croatia,-23,-2.0,-3.0,0.0,-0.12,0,-1,0,-1
+8334,2026-06-24,Group K,Colombia,DR Congo,33,2.0,0.0,2.0,-0.38,0,1,0,1
+8336,2026-06-24,Group B,Bosnia & Herzegovina,Qatar,-8,0.5,-1.0,0.0,0.12,0,1,0,2
+8335,2026-06-24,Group B,Switzerland,Canada,11,-1.0,0.5,0.0,0.12,-1,1,0,1
+8337,2026-06-24,Group C,Morocco,Haiti,76,1.0,-1.5,2.0,0.1,0,0,0,2
+8338,2026-06-24,Group C,Scotland,Brazil,-36,-1.5,0.0,-0.5,0.1,0,0,0,-3
+8339,2026-06-25,Group A,South Africa,South Korea,-35,-0.5,0.5,-1.0,0.38,0,0,0,1
+8340,2026-06-25,Group A,Czechia,Mexico,-26,-0.5,1.5,-2.5,0.38,-1,1,0,-3
+8341,2026-06-25,Group E,Curaçao,Côte d'Ivoire,-49,-0.5,2.5,-1.0,-0.17,0,0,1,-2
+8342,2026-06-25,Group E,Ecuador,Germany,-13,-4.5,-0.5,-2.5,-0.17,0,0,0,1
+8344,2026-06-25,Group F,Tunisia,Netherlands,-37,-3.0,3.0,-2.0,-0.46,0,-1,0,-2
+8343,2026-06-25,Group F,Japan,Sweden,20,0.0,-2.0,0.5,-0.46,0,-1,0,0
+8345,2026-06-26,Group D,Paraguay,Australia,-14,0.0,1.0,0.0,-0.33,0,1,0,0
+8346,2026-06-26,Group D,Türkiye,USA,-5,-3.0,1.0,-3.0,-0.33,-1,1,0,1
+8347,2026-06-26,Group I,Norway,France,-28,0.5,1.0,0.0,-0.12,0,0,0,-3
+8348,2026-06-26,Group I,Senegal,Iraq,42,1.0,-0.5,0.0,-0.12,0,0,0,5
+8350,2026-06-27,Group H,Uruguay,Spain,-14,-0.5,1.5,-1.0,-0.25,0,0,0,-1
+8349,2026-06-27,Group H,Cabo Verde,Saudi Arabia,-6,0.5,-1.5,0.5,-0.25,0,0,1,0
+8351,2026-06-27,Group G,Egypt,Iran,-9,1.0,0.0,1.0,-0.25,0,0,0,0
+8352,2026-06-27,Group G,New Zealand,Belgium,-76,1.0,2.0,-0.5,-0.25,0,-1,0,-4
+8353,2026-06-27,Group L,Croatia,Ghana,62,1.0,2.0,-0.5,-0.13,0,1,0,1
+8354,2026-06-27,Group L,Panama,England,-30,-2.0,0.0,-2.0,-0.13,0,-1,0,-2
+8356,2026-06-27,Group K,DR Congo,Uzbekistan,4,0.0,-3.0,0.5,-0.37,0,0,-1,2
+8355,2026-06-27,Group K,Colombia,Portugal,-8,-1.0,0.0,1.0,-0.37,0,0,0,0
+8357,2026-06-28,Group J,Algeria,Austria,-4,-0.5,0.5,0.0,-0.42,0,-1,0,0
+8358,2026-06-28,Group J,Jordan,Argentina,-62,-1.5,2.5,-3.0,-0.42,0,-1,1,-2
+8359,2026-06-28,Round of 32,South Africa,Canada,-30,-2.0,0.0,0.0,-0.25,-1,0,0,-1
+8360,2026-06-29,Round of 32,Brazil,Japan,12,0.0,-0.667,0.667,1.04,0,1,0,1
+8361,2026-06-29,Round of 32,Germany,Paraguay,31,2.667,0.0,0.667,0.25,0,0,0,0
+8362,2026-06-30,Round of 32,Netherlands,Morocco,-1,1.333,0.333,0.0,-1.04,0,1,0,0
+8363,2026-06-30,Round of 32,Côte d'Ivoire,Norway,-2,-1.333,-1.667,0.0,0.96,0,-1,0,-1
+8364,2026-06-30,Round of 32,France,Sweden,35,1.0,-1.667,1.667,-0.83,0,0,0,3
+8365,2026-07-01,Round of 32,Mexico,Ecuador,9,1.333,-0.667,1.667,0.79,1,-1,0,2
+8366,2026-07-01,Round of 32,England,DR Congo,42,0.667,-0.333,1.0,0.1,0,1,0,1
+8367,2026-07-01,Round of 32,Belgium,Senegal,6,-0.667,-1.333,0.667,-0.33,0,1,0,0
+8368,2026-07-02,Round of 32,USA,Bosnia & Herzegovina,47,1.0,-0.667,0.667,-1.29,1,-1,0,2
+8369,2026-07-02,Round of 32,Spain,Austria,22,-0.333,-2.0,1.0,1.08,0,0,0,3
+8370,2026-07-02,Round of 32,Portugal,Croatia,6,0.333,-1.333,-0.333,-0.1,0,0,0,1
+8371,2026-07-03,Round of 32,Switzerland,Algeria,9,0.667,-1.333,1.0,3.29,0,1,0,2
+8372,2026-07-03,Round of 32,Australia,Egypt,2,-1.0,-0.333,-0.333,1.04,0,0,0,0
+8373,2026-07-03,Round of 32,Argentina,Cabo Verde,66,2.0,-0.333,2.0,-1.08,0,1,-1,0
+8374,2026-07-04,Round of 32,Colombia,Ghana,60,0.667,-0.333,1.0,-0.1,0,1,0,1
+8375,2026-07-04,Round of 16,Canada,Morocco,-23,0.5,-0.25,-0.25,1.25,1,0,0,-3
+8376,2026-07-04,Round of 16,Paraguay,France,-38,-2.5,0.75,-1.75,1.02,0,0,0,-1
+8377,2026-07-05,Round of 16,Brazil,Norway,25,-0.25,-1.5,0.25,1.0,0,0,0,-1
+8378,2026-07-06,Round of 16,Mexico,England,-10,0.0,-0.75,0.5,0.58,1,-1,0,-1
+8379,2026-07-06,Round of 16,Portugal,Spain,-3,0.0,0.5,-0.5,-0.17,0,0,0,-1
+8380,2026-07-07,Round of 16,USA,Belgium,-8,0.5,0.0,0.75,-0.17,1,-1,0,-3
+8381,2026-07-07,Round of 16,Argentina,Egypt,28,1.25,-0.25,1.5,-0.17,0,1,0,1
+8382,2026-07-07,Round of 16,Switzerland,Colombia,-6,1.0,0.5,0.0,0.94,0,0,0,0
+8383,2026-07-09,Quarterfinals,France,Morocco,4,0.8,-0.4,0.8,-0.17,0,1,0,2
+8384,2026-07-10,Quarterfinals,Spain,Belgium,7,-0.6,-1.0,0.8,0.21,0,0,0,1
+8385,2026-07-11,Quarterfinals,Norway,England,-27,0.2,0.8,-0.2,0.21,0,0,0,0
+8386,2026-07-12,Quarterfinals,Argentina,Switzerland,18,1.0,0.4,0.8,0.17,0,0,0,0
+8387,2026-07-14,Semifinals,France,Spain,-1,0.833,0.167,0.333,0.96,0,0,0,-2
+8388,2026-07-15,Semifinals,England,Argentina,-3,-0.667,0.0,-0.333,0.17,0,0,0,-1
+8389,2026-07-18,Match for 3rd place,France,England,1,0.286,-0.571,0.286,1.0,0,0,0,-2
+8390,2026-07-19,Final,Spain,Argentina,-1,-0.857,-0.857,-0.286,1.0,0,0,0,0
