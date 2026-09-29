@@ -129,3 +129,18 @@ print(d.head(10).to_string())
 
 X_cols = ["rank_gap", "form_gf_diff", "form_ga_diff", "form_pts_diff",
           "rest_days_diff", "host_adv", "strong_confed_diff", "debutant_diff"]
+
+
+# Leakage evidence
+print("\nLeakage check 1: head-to-head columns include the match itself (excluded):")
+print(m.loc[m.head_to_head_total_matches.notna(),
+            ["home_team", "away_team", "home_score", "away_score",
+             "head_to_head_total_matches", "head_to_head_home_goals",
+             "head_to_head_away_goals"]].head(5).to_string())
+if os.path.exists(PLAYER_FILE):
+    ps = pd.read_csv(PLAYER_FILE)
+    print("\nLeakage check 2: player_stats last_verified =", list(ps.last_verified.unique()),
+          "-> end-of-tournament totals (excluded)")
+nonzero = int((d.loc[:23, ["form_gf_diff", "form_ga_diff", "form_pts_diff",
+                           "rest_days_diff"]].abs().sum(axis=1) > 0).sum())
+print(f"\nLeakage check 3: matchday-1 rows with non-zero form values = {nonzero} (expected 0)")
