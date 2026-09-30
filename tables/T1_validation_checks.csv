@@ -1,0 +1,11 @@
+Check,Result,Pass
+Row count = 104,104,True
+Explanatory variables = 8,8,True
+Unique match IDs,True,True
+No duplicate fixtures,True,True
+Missing values,0,True
+All model columns numeric,True,True
+Indicator variables coded -1/0/1,True,True
+"First-match form and rest = 0 (24 rows, no leakage)",True,True
+Teams in dataset,48,True
+Goal difference range plausible (-10 to 10),-4 to 6,True
