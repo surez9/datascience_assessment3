@@ -187,3 +187,149 @@ pvals = coef[["p-value", "Robust (HC3) p-value"]].copy()
 coef = coef.round(4)
 coef[["p-value", "Robust (HC3) p-value"]] = pvals.round(7)
 save_table(coef, "T5_coefficients")
+
+# 5. EVALUATE THE MODEL (R2, Adj R2, MAE, MSE, RMSE)
+
+section("5. EVALUATION")
+
+
+def metrics(y_true, y_pred, p=8):
+    n = len(y_true)
+    r2 = r2_score(y_true, y_pred)
+    mse = mean_squared_error(y_true, y_pred)
+    return {"R2": r2, "Adj R2": 1 - (1 - r2) * (n - 1) / (n - p - 1),
+            "MAE": mean_absolute_error(y_true, y_pred), "MSE": mse,
+            "RMSE": np.sqrt(mse), "n": n}
+
+
+# 80/20 train/test split
+X_tr, X_te, y_tr, y_te = train_test_split(X, y, test_size=0.2, random_state=42)
+lr = LinearRegression().fit(X_tr, y_tr)
+
+
+# 5-fold cross-validation repeated 10 times; every match gets an out-of-fold prediction
+def pooled_cv(cols, reps=10):
+    results = []
+    for rep in range(reps):
+        pred = pd.Series(index=y.index, dtype=float)
+        for tr, te in KFold(n_splits=5, shuffle=True, random_state=rep).split(X):
+            model = LinearRegression().fit(d[cols].iloc[tr], y.iloc[tr])
+            pred.iloc[te] = model.predict(d[cols].iloc[te])
+        results.append(metrics(y, pred, p=len(cols)))
+    return pd.DataFrame(results)
+
+
+cv = pooled_cv(X_cols)
+baseline_pred = np.full(len(y), y.mean())
+
+ev = pd.DataFrame({
+    "Full sample (n=104)": metrics(y, ols.fittedvalues),
+    "Train 80% (n=83)": metrics(y_tr, lr.predict(X_tr)),
+    "Test 20% (n=21)": metrics(y_te, lr.predict(X_te)),
+    "5-fold CV x10 (out-of-fold)": cv.mean(),
+    "Baseline: predict mean GD": metrics(y, baseline_pred),
+}).T.round(3)
+ev["n"] = ev["n"].round(0).astype(int)
+ev.loc[["Test 20% (n=21)", "5-fold CV x10 (out-of-fold)"], "Adj R2"] = np.nan   # in-sample measure only
+ev.loc["Baseline: predict mean GD", ["R2", "Adj R2"]] = [0.0, np.nan]
+save_table(ev, "T6_evaluation_metrics")
+
+print(f"\nOut-of-fold R2 across 10 CV repeats: mean {cv.R2.mean():.3f}, "
+      f"min {cv.R2.min():.3f}, max {cv.R2.max():.3f}")
+rmse_gain = 1 - ev.loc["Full sample (n=104)", "RMSE"] / ev.loc["Baseline: predict mean GD", "RMSE"]
+print(f"RMSE improvement vs baseline: {rmse_gain:.1%}")
+print(f"F-test p-value: {ols.f_pvalue:.2e}")
+direction = (np.sign(np.round(ols.fittedvalues)) == np.sign(y)).mean()
+print(f"Correct outcome direction (rounded prediction): {direction:.1%}")
+
+# actual vs predicted + error comparison
+fig, ax = plt.subplots(1, 3, figsize=(17, 5))
+lim = [-5, 7]
+ax[0].scatter(ols.fittedvalues, y, alpha=.6, color="#2E86AB")
+ax[0].plot(lim, lim, "r--")
+ax[0].set(xlim=lim, ylim=lim, title="Actual vs predicted (full sample)", xlabel="Predicted GD", ylabel="Actual GD")
+ax[1].scatter(lr.predict(X_te), y_te, alpha=.8, color="#F18F01")
+ax[1].plot(lim, lim, "r--")
+ax[1].set(xlim=lim, ylim=lim, title="Actual vs predicted (20% test set)", xlabel="Predicted GD", ylabel="Actual GD")
+ev[["MAE", "RMSE"]].plot.barh(ax=ax[2], color=["#2E86AB", "#C73E1D"])
+ax[2].invert_yaxis()
+ax[2].set(title="Error by evaluation set (goals)", xlabel="Goals")
+ax[2].legend(loc="upper center", bbox_to_anchor=(0.5, -0.15), ncol=2)
+ax[2].set_xlim(0, 2.35)
+for cont in ax[2].containers:
+    ax[2].bar_label(cont, fmt="%.2f", fontsize=8, padding=2)
+save_fig("F5_actual_vs_predicted")
+
+# residual diagnostics + assumption tests
+resid = ols.resid
+fig, ax = plt.subplots(1, 3, figsize=(17, 4.8))
+ax[0].scatter(ols.fittedvalues, resid, alpha=.6)
+ax[0].axhline(0, color="r", ls="--")
+ax[0].set(title="Residuals vs fitted", xlabel="Fitted GD", ylabel="Residual")
+stats.probplot(resid, dist="norm", plot=ax[1])
+ax[1].set_title("Normal Q-Q plot of residuals")
+sns.histplot(resid, kde=True, ax=ax[2], color="#2E86AB")
+ax[2].set(title="Residual distribution", xlabel="Residual")
+save_fig("F6_residual_diagnostics")
+
+bp = het_breuschpagan(resid, sm.add_constant(X))
+sw = stats.shapiro(resid)
+diag = pd.DataFrame({
+    "Test": ["Breusch-Pagan (constant variance)", "Shapiro-Wilk (normal residuals)",
+             "Durbin-Watson (independence)"],
+    "Statistic": [bp[0], sw.statistic, sm.stats.durbin_watson(resid)],
+    "p-value": [bp[1], sw.pvalue, np.nan],
+}).round(3)
+save_table(diag, "T7_assumption_tests", index=False)
+
+# F7: standardised coefficients
+sc = coef.drop("const").sort_values("Std. coefficient")
+plt.figure(figsize=(9, 5))
+colors = ["#C73E1D" if p < .05 else "#9BA3AB" for p in sc["p-value"]]
+plt.barh(sc.index, sc["Std. coefficient"], color=colors)
+for i, (v, p) in enumerate(zip(sc["Std. coefficient"], sc["p-value"])):
+    label = "p<0.001" if p < 0.001 else f"p={p:.3f}"
+    plt.text(v + (0.01 if v >= 0 else -0.01), i, label, va="center",
+             ha="left" if v >= 0 else "right", fontsize=9)
+plt.axvline(0, color="k", lw=.8)
+plt.title("Standardised coefficients (red = significant at 5%)")
+plt.xlabel("Change in GD (SD units) per 1 SD change in predictor")
+plt.xlim(-0.35, 0.75)
+save_fig("F7_standardised_coefficients")
+
+# Largest prediction errors
+errors = d[["date", "stage", "home_team", "away_team", "goal_diff"]].copy()
+errors["predicted_gd"] = ols.fittedvalues.round(2)
+errors["residual"] = resid.round(2)
+largest = errors.reindex(errors.residual.abs().sort_values(ascending=False).index).head(8)
+save_table(largest, "T8_largest_errors", index=False)
+
+# Benchmark: full model vs rank_gap only vs predict-the-mean
+rank_only = sm.OLS(y, sm.add_constant(d[["rank_gap"]])).fit()
+cv_rank = pooled_cv(["rank_gap"]).mean()
+cv_full = cv.mean()
+cmp = pd.DataFrame({
+    "Model": ["Predict mean GD (no variables)", "rank_gap only", "Full model (8 variables)"],
+    "In-sample R2": [0, rank_only.rsquared, ols.rsquared],
+    "In-sample Adj R2": [0, rank_only.rsquared_adj, ols.rsquared_adj],
+    "CV R2": [0, cv_rank.R2, cv_full.R2],
+    "CV MAE": [ev.loc["Baseline: predict mean GD", "MAE"], cv_rank.MAE, cv_full.MAE],
+    "CV RMSE": [ev.loc["Baseline: predict mean GD", "RMSE"], cv_rank.RMSE, cv_full.RMSE],
+}).round(3)
+save_table(cmp, "T9_model_comparison", index=False)
+
+# key number for the interprestation
+section("6. INTERPRETATION")
+
+b = ols.params
+eq = " ".join([f"{b['const']:.3f}"] + [f"{'+' if b[c] >= 0 else '-'} {abs(b[c]):.4f}*{c}" for c in X_cols])
+print(f"Predicted GD = {eq}\n")
+print(f"rank_gap: {b.rank_gap:+.4f} GD per rank place "
+      f"(p={ols.pvalues.rank_gap:.1e}, robust HC3 p={robust.pvalues[1]:.1e}). "
+      f"A 30-place gap = {30 * b.rank_gap:+.2f} goals.")
+mex = d[(d.home_team == "Mexico") & (d.away_team == "South Africa")].index[0]
+print(f"Example: Mexico v South Africa: rank_gap {d.rank_gap[mex]} -> rank term {d.rank_gap[mex] * b.rank_gap:+.2f}; "
+      f"prediction {ols.fittedvalues[mex]:+.2f}; actual {d.goal_diff[mex]:+d}")
+print("\nSignificant at 5%:", [c for c in X_cols if ols.pvalues[c] < .05])
+print("Not significant   :", [c for c in X_cols if ols.pvalues[c] >= .05])
+print("\nDone. Figures in ./figures, tables in ./tables")

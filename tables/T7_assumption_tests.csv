@@ -1,0 +1,4 @@
+Test,Statistic,p-value
+Breusch-Pagan (constant variance),19.843,0.011
+Shapiro-Wilk (normal residuals),0.99,0.606
+Durbin-Watson (independence),2.007,

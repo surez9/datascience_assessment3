@@ -1,0 +1,4 @@
+Model,In-sample R2,In-sample Adj R2,CV R2,CV MAE,CV RMSE
+Predict mean GD (no variables),0.0,0.0,0.0,1.551,2.004
+rank_gap only,0.371,0.365,0.339,1.289,1.63
+Full model (8 variables),0.403,0.353,0.233,1.392,1.755

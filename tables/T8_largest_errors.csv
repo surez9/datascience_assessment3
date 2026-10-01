@@ -1,0 +1,9 @@
+date,stage,home_team,away_team,goal_diff,predicted_gd,residual
+2026-06-18,Group B,Canada,Qatar,6,1.66,4.34
+2026-06-26,Group I,Senegal,Iraq,5,1.39,3.61
+2026-06-14,Group E,Germany,Curaçao,6,2.56,3.44
+2026-06-15,Group F,Sweden,Tunisia,4,0.61,3.39
+2026-06-21,Group E,Ecuador,Curaçao,0,3.24,-3.24
+2026-07-04,Round of 16,Canada,Morocco,-3,0.04,-3.04
+2026-07-07,Round of 16,USA,Belgium,-3,-0.04,-2.96
+2026-06-23,Group K,Portugal,Uzbekistan,5,2.15,2.85
