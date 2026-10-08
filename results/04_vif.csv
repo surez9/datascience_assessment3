@@ -1,0 +1,10 @@
+Variable,VIF
+const,3.1135
+is_host,1.0651
+is_knockout,3.2518
+team_matches_played_before,20.2806
+team_goals_scored_before,11.9056
+team_goals_conceded_before,2.887
+opp_goals_scored_before,5.1062
+opp_goals_conceded_before,1.526
+team_points_before,22.2894

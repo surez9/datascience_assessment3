@@ -1,0 +1,10 @@
+,goals_scored,is_host,is_knockout,team_matches_played_before,team_goals_scored_before,team_goals_conceded_before,opp_goals_scored_before,opp_goals_conceded_before,team_points_before
+goals_scored,1.0,0.1054,-0.0185,0.0241,0.0687,-0.0809,-0.0065,0.1898,0.0674
+is_host,0.1054,1.0,0.0558,0.0162,0.0841,-0.1122,-0.0428,0.0066,0.0648
+is_knockout,-0.0185,0.0558,1.0,0.8189,0.7541,0.3984,0.7541,0.3984,0.7646
+team_matches_played_before,0.0241,0.0162,0.8189,1.0,0.8878,0.5604,0.8878,0.5604,0.9152
+team_goals_scored_before,0.0687,0.0841,0.7541,0.8878,1.0,0.4518,0.7649,0.4674,0.9385
+team_goals_conceded_before,-0.0809,-0.1122,0.3984,0.5604,0.4518,1.0,0.4674,0.3655,0.3205
+opp_goals_scored_before,-0.0065,-0.0428,0.7541,0.8878,0.7649,0.4674,1.0,0.4518,0.8206
+opp_goals_conceded_before,0.1898,0.0066,0.3984,0.5604,0.4674,0.3655,0.4518,1.0,0.4669
+team_points_before,0.0674,0.0648,0.7646,0.9152,0.9385,0.3205,0.8206,0.4669,1.0
