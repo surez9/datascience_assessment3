@@ -1,3 +1,7 @@
+"""
+Linear Regression 2.1 (Improved): Predicting Goal Difference in FIFA World Cup 2026 Matches
+
+"""
 
 import os
 import numpy as np
@@ -10,20 +14,20 @@ import statsmodels.api as sm
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 from statsmodels.stats.diagnostic import het_breuschpagan
 from scipy import stats
-from sklearn.linear_model import LinearRegression
-from sklearn.model_selection import train_test_split, KFold
+from sklearn.linear_model import LinearRegression, RidgeCV
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import train_test_split, KFold, cross_val_predict
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 
-# setup-
+# Setup
 DATA_DIR = os.path.dirname(os.path.abspath(__file__))
-OUT_DIR = DATA_DIR
-DATA_FILE = os.path.join(DATA_DIR, "lr21_dataset.csv")
-
-FIG_DIR = os.path.join(OUT_DIR, "figures")
-TAB_DIR = os.path.join(OUT_DIR, "tables")
+MATCH_FILE = os.path.join(DATA_DIR, "post_match_details.csv")
+V1_FILE = os.path.join(DATA_DIR, "lr21_dataset.csv")
+FIG_DIR = os.path.join(DATA_DIR, "figures")
+TAB_DIR = os.path.join(DATA_DIR, "tables")
 os.makedirs(FIG_DIR, exist_ok=True)
 os.makedirs(TAB_DIR, exist_ok=True)
-
 pd.set_option("display.width", 200)
 pd.set_option("display.max_columns", 30)
 sns.set_theme(style="whitegrid", context="notebook")
@@ -46,150 +50,140 @@ def section(title):
     print("\n" + "=" * 70 + f"\n{title}\n" + "=" * 70)
 
 
-#loading the dataset
+def make_ridge():
+    # Ridge regression: scale features, then pick the penalty (alpha) by internal CV
+    return make_pipeline(StandardScaler(), RidgeCV(alphas=np.logspace(-2, 3, 50)))
 
 
-d = pd.read_csv(DATA_FILE)
-X_cols = ["rank_gap", "form_gf_diff", "form_ga_diff", "form_pts_diff",
-          "rest_days_diff", "host_adv", "strong_confed_diff", "debutant_diff"]
-TARGET = "goal_diff"
-print(f"Loaded {DATA_FILE}: {d.shape[0]} rows x {d.shape[1]} columns")
-print(d.head(10).to_string())
+# 1. Build the improved dataset (all features pre-match)
+section("1. BUILD IMPROVED DATASET")
 
+m = pd.read_csv(MATCH_FILE)
+m["date"] = pd.to_datetime(m["event_date"])
+m = m.sort_values("date").reset_index(drop=True)
+v1 = pd.read_csv(V1_FILE)
+assert len(m) == len(v1) == 104, "Both files must hold 104 matches"
+assert (v1.match_id.values == m.event_id.values).all(), "Row order of lr21_dataset.csv must match kick-off order"
 
-section("2. VALIDATION")
+# FIFA ranking published 11 June 2026 (tournament opening day)
+fifa_rank = {
+    "Argentina": 1, "Spain": 2, "France": 3, "England": 4, "Portugal": 5, "Brazil": 6,
+    "Morocco": 7, "Netherlands": 8, "Belgium": 9, "Germany": 10, "Croatia": 11,
+    "Colombia": 13, "Mexico": 14, "Senegal": 15, "Uruguay": 16, "USA": 17, "Japan": 18,
+    "Switzerland": 19, "Iran": 20, "Türkiye": 22, "Ecuador": 23, "Austria": 24,
+    "South Korea": 25, "Australia": 27, "Algeria": 28, "Egypt": 29, "Canada": 30,
+    "Norway": 31, "Côte d'Ivoire": 33, "Panama": 34, "Sweden": 38, "Czechia": 40,
+    "Paraguay": 41, "Scotland": 42, "Tunisia": 45, "DR Congo": 46, "Uzbekistan": 50,
+    "Qatar": 56, "Iraq": 57, "South Africa": 60, "Saudi Arabia": 61, "Jordan": 63,
+    "Bosnia & Herzegovina": 64, "Cabo Verde": 67, "Ghana": 73, "Curaçao": 82,
+    "Haiti": 83, "New Zealand": 85,
+}
+assert set(fifa_rank) == set(m.home_team) | set(m.away_team), "Team names must match the ranking list"
+home_rank = m.home_team.map(fifa_rank)
+away_rank = m.away_team.map(fifa_rank)
 
-teams = set(d.home_team) | set(d.away_team)
-n_missing = int(d[X_cols + [TARGET]].isna().sum().sum())
-numeric_ok = all(pd.api.types.is_numeric_dtype(d[c]) for c in X_cols + [TARGET])
-coded_ok = all(d[c].isin([-1, 0, 1]).all() for c in ["host_adv", "strong_confed_diff", "debutant_diff"])
-# Leakage check: when BOTH teams play their first match, no earlier data exists,
-# so form and rest variables must equal 0. File order is chronological (kick-off time).
-seen, first_rows = set(), []
-for i, r in d.iterrows():
-    if r.home_team not in seen and r.away_team not in seen:
-        first_rows.append(i)
-    seen.update([r.home_team, r.away_team])
-form_ok = (d.loc[first_rows, ["form_gf_diff", "form_ga_diff", "form_pts_diff", "rest_days_diff"]] == 0).all().all()
-checks = pd.DataFrame({
-    "Check": ["Row count = 104", "Explanatory variables = 8", "Unique match IDs",
-              "No duplicate fixtures", "Missing values", "All model columns numeric",
-              "Indicator variables coded -1/0/1", f"First-match form and rest = 0 ({len(first_rows)} rows, no leakage)",
-              "Teams in dataset", "Goal difference range plausible (-10 to 10)"],
-    "Result": [len(d), len(X_cols), d.match_id.is_unique,
-               not d.duplicated(["date", "home_team", "away_team"]).any(), n_missing, numeric_ok,
-               coded_ok, form_ok, len(teams), f"{d[TARGET].min()} to {d[TARGET].max()}"],
-    "Pass": [len(d) == 104, len(X_cols) == 8, d.match_id.is_unique,
-             not d.duplicated(["date", "home_team", "away_team"]).any(), n_missing == 0, numeric_ok,
-             coded_ok, form_ok, len(teams) == 48, d[TARGET].between(-10, 10).all()],
+# Form: goal difference per match in EARLIER matches only (extra time counted, penalties not)
+final_h = m.home_score + m.extra_time_score_home.fillna(0)
+final_a = m.away_score + m.extra_time_score_away.fillna(0)
+history = {t: [] for t in fifa_rank}
+form_h, form_a = [], []
+for i, r in m.iterrows():
+    form_h.append(np.mean(history[r.home_team]) if history[r.home_team] else 0.0)   # before this match
+    form_a.append(np.mean(history[r.away_team]) if history[r.away_team] else 0.0)
+    g = final_h[i] - final_a[i]                                                     # then record the result
+    history[r.home_team].append(g)
+    history[r.away_team].append(-g)
+
+rank_gap = away_rank - home_rank
+d = pd.DataFrame({
+    "match_id": m.event_id, "date": m.date.dt.date, "stage": v1.stage,
+    "home_team": m.home_team, "away_team": m.away_team,
+    # 8 explanatory variables
+    "rank_gap_sqrt": (np.sign(rank_gap) * np.sqrt(rank_gap.abs())).round(4),     # strength, diminishing returns
+    "log_rank_ratio": (np.log(away_rank) - np.log(home_rank)).round(4),          # relative strength
+    "form_gd_diff": (pd.Series(form_h) - pd.Series(form_a)).round(4),            # earlier GD per match
+    "rest_days_diff": v1.rest_days_diff,                                         # schedule
+    "host_adv": v1.host_adv,                                                     # USA/Mexico/Canada
+    "strong_confed_diff": v1.strong_confed_diff,                                 # UEFA/CONMEBOL
+    "knockout": m.group_name.isna().astype(int),                                 # stage known in advance
+    "top10_diff": (home_rank <= 10).astype(int) - (away_rank <= 10).astype(int), # elite team
+    # target
+    "goal_diff": v1.goal_diff,
 })
-save_table(checks, "T1_validation_checks", index=False)
+d.to_csv(os.path.join(DATA_DIR, "lr21_dataset_v2.csv"), index=False)
+print("Saved lr21_dataset_v2.csv")
+print(d.head(8).to_string())
+
+X_cols = ["rank_gap_sqrt", "log_rank_ratio", "form_gd_diff", "rest_days_diff",
+          "host_adv", "strong_confed_diff", "knockout", "top10_diff"]
+OLD_COLS = ["rank_gap", "form_gf_diff", "form_ga_diff", "form_pts_diff",
+            "rest_days_diff", "host_adv", "strong_confed_diff", "debutant_diff"]
+TARGET = "goal_diff"
+X, y = d[X_cols], d[TARGET]
+
+# 2. Validation
+section("2. VALIDATION")
+first24 = d.index[:24]
+checks = pd.DataFrame({
+    "Check": ["Row count = 104", "Explanatory variables = 8", "No missing values",
+              "Unique match IDs", "First-match form = 0 (no leakage)",
+              "Target identical to v1", "Target equals home - away score"],
+    "Pass": [len(d) == 104, len(X_cols) == 8, int(d[X_cols + [TARGET]].isna().sum().sum()) == 0,
+             d.match_id.is_unique, bool((d.loc[first24, "form_gd_diff"] == 0).all()),
+             bool((d.goal_diff == v1.goal_diff).all()),
+             bool((d.goal_diff == m.home_score - m.away_score).all())],
+})
+save_table(checks, "U1_validation_checks", index=False)
 if not checks.Pass.all():
     print("\nWARNING: at least one validation check failed. Review the table above.")
 
-stage_counts = d.stage.where(~d.stage.str.startswith("Group"), "Group stage").value_counts()
-print("\nMatches by stage:\n" + stage_counts.to_string())
+# 3. Exploratory data analysis
+section("3. EDA")
+desc = d[X_cols + [TARGET]].describe().T[["mean", "std", "min", "50%", "max"]].round(3)
+save_table(desc, "U2_descriptive_statistics")
 
+corr = d[X_cols + [TARGET]].corr()
+save_table(corr[TARGET].drop(TARGET).sort_values(key=abs, ascending=False).round(3).to_frame("r with goal_diff"),
+           "U3_target_correlations")
 
-# 3. EXPLORATORY DATA ANALYSIS
-section("3. EXPLORATORY DATA ANALYSIS")
-
-desc = d[X_cols + ["goal_diff"]].describe().T[["mean", "std", "min", "25%", "50%", "75%", "max"]].round(3)
-save_table(desc, "T2_descriptive_statistics")
-
-print(f"\nGoal difference: mean {d.goal_diff.mean():.2f}, SD {d.goal_diff.std():.2f}, "
-      f"skew {d.goal_diff.skew():.2f}, draws {(d.goal_diff == 0).mean():.0%}")
-
-# F1: target distribution
-fig, ax = plt.subplots(1, 2, figsize=(12, 4))
-vc = d.goal_diff.value_counts().sort_index()
-ax[0].bar(vc.index, vc.values, color="#2E86AB")
-ax[0].set(title="Distribution of goal difference (home - away)", xlabel="Goal difference", ylabel="Matches")
-for x, yv in zip(vc.index, vc.values):
-    ax[0].text(x, yv + 0.4, yv, ha="center", fontsize=9)
-outcome = pd.Series(np.select([d.goal_diff > 0, d.goal_diff < 0],
-                              ["Home-listed win", "Away-listed win"], "Draw")).value_counts()
-ax[1].bar(outcome.index, outcome.values, color=["#2E86AB", "#A23B72", "#F18F01"])
-ax[1].set(title="Match outcomes after 90 minutes", ylabel="Matches")
-for i, v in enumerate(outcome.values):
-    ax[1].text(i, v + 0.5, v, ha="center")
-save_fig("F1_target_distribution")
-
-# F2: correlation heatmap
 plt.figure(figsize=(9, 7))
-corr = d[X_cols + ["goal_diff"]].corr()
-sns.heatmap(corr, annot=True, fmt=".2f", cmap="RdBu_r", center=0, vmin=-1, vmax=1,
-            square=True, cbar_kws={"shrink": .8})
-plt.title("Correlation matrix: explanatory variables and goal difference")
-save_fig("F2_correlation_heatmap")
-target_corr = (corr["goal_diff"].drop("goal_diff")
-               .sort_values(key=abs, ascending=False).round(3).to_frame("r with goal_diff"))
-save_table(target_corr, "T3_target_correlations")
+sns.heatmap(corr, annot=True, fmt=".2f", cmap="RdBu_r", center=0, vmin=-1, vmax=1, square=True)
+plt.title("Correlation matrix: improved features")
+save_fig("G1_correlation_heatmap")
 
-# F3: scatter of each variable vs target
-fig, axes = plt.subplots(2, 4, figsize=(16, 7.5))
-rng = np.random.default_rng(1)
-for a, c in zip(axes.flat, X_cols):
-    jitter = rng.normal(0, .12, len(d))
-    a.scatter(d[c], d.goal_diff + jitter, alpha=.55, s=22, color="#2E86AB")
-    b = np.polyfit(d[c], d.goal_diff, 1)
-    xs = np.linspace(d[c].min(), d[c].max(), 50)
-    a.plot(xs, np.polyval(b, xs), color="#C73E1D", lw=2)
-    a.set(title=f"{c}  (r = {d[c].corr(d.goal_diff):.2f})", xlabel=c, ylabel="Goal difference")
-save_fig("F3_scatter_each_variable")
+# Why the square root helps: raw vs sqrt rank gap
+fig, ax = plt.subplots(1, 2, figsize=(13, 4.8))
+for a, col, lab in [(ax[0], v1.rank_gap, "Raw rank gap"), (ax[1], d.rank_gap_sqrt, "Signed sqrt of rank gap")]:
+    sns.regplot(x=col, y=y, ax=a, scatter_kws={"alpha": .6, "s": 25}, line_kws={"color": "#C73E1D"})
+    a.set(title=f"{lab} (r = {col.corr(y):.3f})", xlabel=lab, ylabel="Goal difference")
+save_fig("G2_raw_vs_sqrt_rank_gap")
 
-# F4: rank gap vs goal difference
-plt.figure(figsize=(9, 5.5))
-sns.regplot(data=d, x="rank_gap", y="goal_diff", scatter_kws={"alpha": .6, "s": 30},
-            line_kws={"color": "#C73E1D"})
-labels = {("Germany", "Curaçao"): (-40, -38), ("Canada", "Qatar"): (-110, -10),
-          ("Senegal", "Iraq"): (-120, -6), ("Portugal", "Uzbekistan"): (25, -48),
-          ("New Zealand", "Belgium"): (10, 10), ("Brazil", "Haiti"): (-95, -35)}
-for (home, away), offset in labels.items():
-    row = d[(d.home_team == home) & (d.away_team == away)]
-    if row.empty:
-        continue
-    row = row.iloc[0]
-    plt.annotate(f"{home} v {away} ({row.goal_diff:+d})", (row.rank_gap, row.goal_diff),
-                 fontsize=8, xytext=offset, textcoords="offset points",
-                 arrowprops=dict(arrowstyle="-", color="grey", lw=.7))
-plt.title("FIFA rank gap vs goal difference")
-plt.xlabel("Away rank - home rank (positive = home team higher ranked)")
-plt.ylabel("Goal difference")
-save_fig("F4_rank_gap_vs_goal_diff")
-
-# Multicollinearity
-X_const = sm.add_constant(d[X_cols])
+X_const = sm.add_constant(X)
 vif = pd.DataFrame({"Variable": X_cols,
                     "VIF": [variance_inflation_factor(X_const.values, i + 1) for i in range(len(X_cols))]}).round(2)
-save_table(vif, "T4_vif", index=False)
+save_table(vif, "U4_vif", index=False)
+print("Note: rank_gap_sqrt and log_rank_ratio overlap (high VIF). Ridge handles this by shrinking both.")
 
-
-# 4. BUILD THE MODEL 
-section("4. MODEL: OLS ON ALL 104 MATCHES")
-
-X, y = d[X_cols], d[TARGET]
-ols = sm.OLS(y, sm.add_constant(X)).fit()
+# 4. Models: OLS (for interpretation) and Ridge (for prediction)
+section("4. MODELS")
+ols = sm.OLS(y, sm.add_constant(X)).fit(cov_type="HC3")   # robust standard errors
 print(ols.summary())
 
-robust = ols.get_robustcov_results(cov_type="HC3")        # heteroscedasticity-robust SEs
+ridge = make_ridge().fit(X, y)
+alpha = ridge[-1].alpha_
+scale = ridge[0].scale_
+ridge_coef = pd.Series(ridge[-1].coef_ / scale, index=X_cols)          # back to original units
+ridge_int = ridge[-1].intercept_ - (ridge_coef * ridge[0].mean_).sum()
 coef = pd.DataFrame({
-    "Coefficient": ols.params,
-    "Std error": ols.bse,
-    "t": ols.tvalues,
-    "p-value": ols.pvalues,
-    "CI 2.5%": ols.conf_int()[0],
-    "CI 97.5%": ols.conf_int()[1],
-    "Robust (HC3) p-value": robust.pvalues,
-})
-coef["Std. coefficient"] = ols.params * pd.concat([pd.Series({"const": np.nan}), X.std()]) / y.std()
-pvals = coef[["p-value", "Robust (HC3) p-value"]].copy()
-coef = coef.round(4)
-coef[["p-value", "Robust (HC3) p-value"]] = pvals.round(7)
-save_table(coef, "T5_coefficients")
+    "OLS coef": ols.params.drop("const"),
+    "OLS robust p": ols.pvalues.drop("const"),
+    "Ridge coef": ridge_coef,
+    "Ridge std. coef": pd.Series(ridge[-1].coef_ / y.std(ddof=0), index=X_cols),
+}).round(4)
+save_table(coef, "U5_coefficients")
+print(f"\nRidge alpha chosen by CV: {alpha:.2f}; Ridge intercept: {ridge_int:.3f}")
 
-# 5. EVALUATE THE MODEL (R2, Adj R2, MAE, MSE, RMSE)
-
+# 5. Evaluation: R2, Adj R2, MAE, MSE, RMSE
 section("5. EVALUATION")
 
 
@@ -197,139 +191,110 @@ def metrics(y_true, y_pred, p=8):
     n = len(y_true)
     r2 = r2_score(y_true, y_pred)
     mse = mean_squared_error(y_true, y_pred)
+    # outcome accuracy: predict a draw when |prediction| < 0.5
+    pred_out = np.where(np.abs(y_pred) < 0.5, 0, np.sign(y_pred))
     return {"R2": r2, "Adj R2": 1 - (1 - r2) * (n - 1) / (n - p - 1),
-            "MAE": mean_absolute_error(y_true, y_pred), "MSE": mse,
-            "RMSE": np.sqrt(mse), "n": n}
+            "MAE": mean_absolute_error(y_true, y_pred), "MSE": mse, "RMSE": np.sqrt(mse),
+            "Outcome acc": (pred_out == np.sign(y_true)).mean()}
+
+
+# v1 columns kept alongside v2 so both versions get the same test
+d_all = pd.concat([d, v1[["rank_gap", "form_gf_diff", "form_ga_diff", "form_pts_diff", "debutant_diff"]]], axis=1)
+
+
+def repeated_cv(model, cols, reps=20):
+    # 5-fold CV repeated 20 times; every match is predicted by a model that never saw it
+    rows = [metrics(y, cross_val_predict(model, d_all[cols], y, cv=KFold(5, shuffle=True, random_state=s)), p=len(cols))
+            for s in range(reps)]
+    out = pd.DataFrame(rows).mean()
+    out["Adj R2"] = np.nan          # in-sample measure only
+    return out
 
 
 # 80/20 train/test split
 X_tr, X_te, y_tr, y_te = train_test_split(X, y, test_size=0.2, random_state=42)
-lr = LinearRegression().fit(X_tr, y_tr)
-
-
-# 5-fold cross-validation repeated 10 times; every match gets an out-of-fold prediction
-def pooled_cv(cols, reps=10):
-    results = []
-    for rep in range(reps):
-        pred = pd.Series(index=y.index, dtype=float)
-        for tr, te in KFold(n_splits=5, shuffle=True, random_state=rep).split(X):
-            model = LinearRegression().fit(d[cols].iloc[tr], y.iloc[tr])
-            pred.iloc[te] = model.predict(d[cols].iloc[te])
-        results.append(metrics(y, pred, p=len(cols)))
-    return pd.DataFrame(results)
-
-
-cv = pooled_cv(X_cols)
-baseline_pred = np.full(len(y), y.mean())
+ridge_split = make_ridge().fit(X_tr, y_tr)
 
 ev = pd.DataFrame({
-    "Full sample (n=104)": metrics(y, ols.fittedvalues),
-    "Train 80% (n=83)": metrics(y_tr, lr.predict(X_tr)),
-    "Test 20% (n=21)": metrics(y_te, lr.predict(X_te)),
-    "5-fold CV x10 (out-of-fold)": cv.mean(),
-    "Baseline: predict mean GD": metrics(y, baseline_pred),
+    "Ridge - full sample (n=104)": metrics(y, ridge.predict(X)),
+    "Ridge - train 80% (n=83)": metrics(y_tr, ridge_split.predict(X_tr)),
+    "Ridge - test 20% (n=21)": metrics(y_te, ridge_split.predict(X_te)),
+    "Ridge - 5-fold CV x20": repeated_cv(make_ridge(), X_cols),
+    "Baseline - predict mean": metrics(y, np.full(len(y), y.mean())),
 }).T.round(3)
-ev["n"] = ev["n"].round(0).astype(int)
-ev.loc[["Test 20% (n=21)", "5-fold CV x10 (out-of-fold)"], "Adj R2"] = np.nan   # in-sample measure only
-ev.loc["Baseline: predict mean GD", ["R2", "Adj R2"]] = [0.0, np.nan]
-save_table(ev, "T6_evaluation_metrics")
+ev.loc[["Ridge - test 20% (n=21)", "Baseline - predict mean"], "Adj R2"] = np.nan
+save_table(ev, "U6_evaluation_metrics")
 
-print(f"\nOut-of-fold R2 across 10 CV repeats: mean {cv.R2.mean():.3f}, "
-      f"min {cv.R2.min():.3f}, max {cv.R2.max():.3f}")
-rmse_gain = 1 - ev.loc["Full sample (n=104)", "RMSE"] / ev.loc["Baseline: predict mean GD", "RMSE"]
-print(f"RMSE improvement vs baseline: {rmse_gain:.1%}")
-print(f"F-test p-value: {ols.f_pvalue:.2e}")
-direction = (np.sign(np.round(ols.fittedvalues)) == np.sign(y)).mean()
-print(f"Correct outcome direction (rounded prediction): {direction:.1%}")
+# Version 1 vs version 2, same honest test (repeated 5-fold CV)
+cmp = pd.DataFrame({
+    "V1: original 8, OLS": repeated_cv(LinearRegression(), OLD_COLS),
+    "V1 features + Ridge": repeated_cv(make_ridge(), OLD_COLS),
+    "rank_gap only, OLS": repeated_cv(LinearRegression(), ["rank_gap"]),
+    "V2: improved 8, OLS": repeated_cv(LinearRegression(), X_cols),
+    "V2: improved 8, Ridge (FINAL)": repeated_cv(make_ridge(), X_cols),
+}).T[["R2", "MAE", "MSE", "RMSE", "Outcome acc"]].round(3)
+save_table(cmp, "U7_version_comparison")
+gain = cmp.loc["V2: improved 8, Ridge (FINAL)", "R2"] / cmp.loc["V1: original 8, OLS", "R2"] - 1
+print(f"\nOut-of-sample R2 improvement over v1: {gain:+.0%}")
 
-# actual vs predicted + error comparison
-fig, ax = plt.subplots(1, 3, figsize=(17, 5))
-lim = [-5, 7]
-ax[0].scatter(ols.fittedvalues, y, alpha=.6, color="#2E86AB")
-ax[0].plot(lim, lim, "r--")
-ax[0].set(xlim=lim, ylim=lim, title="Actual vs predicted (full sample)", xlabel="Predicted GD", ylabel="Actual GD")
-ax[1].scatter(lr.predict(X_te), y_te, alpha=.8, color="#F18F01")
-ax[1].plot(lim, lim, "r--")
-ax[1].set(xlim=lim, ylim=lim, title="Actual vs predicted (20% test set)", xlabel="Predicted GD", ylabel="Actual GD")
-ev[["MAE", "RMSE"]].plot.barh(ax=ax[2], color=["#2E86AB", "#C73E1D"])
-ax[2].invert_yaxis()
-ax[2].set(title="Error by evaluation set (goals)", xlabel="Goals")
-ax[2].legend(loc="upper center", bbox_to_anchor=(0.5, -0.15), ncol=2)
-ax[2].set_xlim(0, 2.35)
-for cont in ax[2].containers:
-    ax[2].bar_label(cont, fmt="%.2f", fontsize=8, padding=2)
-save_fig("F5_actual_vs_predicted")
+# Comparison chart
+fig, ax = plt.subplots(1, 2, figsize=(14, 4.5))
+cmp["R2"].plot.barh(ax=ax[0], color=["#9BA3AB"] * 4 + ["#C73E1D"])
+ax[0].set(title="Cross-validated R² (higher is better)", xlabel="R²")
+cmp["MAE"].plot.barh(ax=ax[1], color=["#9BA3AB"] * 4 + ["#C73E1D"])
+ax[1].set(title="Cross-validated MAE in goals (lower is better)", xlabel="MAE")
+ax[1].set_xlim(1.0, cmp["MAE"].max() + 0.1)
+for a in ax:
+    a.invert_yaxis()
+    for c in a.containers:
+        a.bar_label(c, fmt="%.3f", fontsize=8, padding=2)
+save_fig("G3_version_comparison")
 
-# residual diagnostics + assumption tests
+# Actual vs predicted (out-of-fold, so it shows real accuracy)
+oof = cross_val_predict(make_ridge(), X, y, cv=KFold(5, shuffle=True, random_state=42))
+plt.figure(figsize=(6.5, 6))
+plt.scatter(oof, y, alpha=.6, color="#2E86AB")
+plt.plot([-5, 7], [-5, 7], "r--")
+plt.xlim(-5, 7); plt.ylim(-5, 7)
+plt.title(f"Actual vs out-of-fold predicted GD (R² = {r2_score(y, oof):.3f})")
+plt.xlabel("Predicted goal difference"); plt.ylabel("Actual goal difference")
+save_fig("G4_actual_vs_predicted_oof")
+
+# Residual diagnostics and assumption tests (OLS on new features)
 resid = ols.resid
-fig, ax = plt.subplots(1, 3, figsize=(17, 4.8))
-ax[0].scatter(ols.fittedvalues, resid, alpha=.6)
-ax[0].axhline(0, color="r", ls="--")
+fig, ax = plt.subplots(1, 2, figsize=(12, 4.5))
+ax[0].scatter(ols.fittedvalues, resid, alpha=.6); ax[0].axhline(0, color="r", ls="--")
 ax[0].set(title="Residuals vs fitted", xlabel="Fitted GD", ylabel="Residual")
-stats.probplot(resid, dist="norm", plot=ax[1])
-ax[1].set_title("Normal Q-Q plot of residuals")
-sns.histplot(resid, kde=True, ax=ax[2], color="#2E86AB")
-ax[2].set(title="Residual distribution", xlabel="Residual")
-save_fig("F6_residual_diagnostics")
-
+stats.probplot(resid, dist="norm", plot=ax[1]); ax[1].set_title("Normal Q-Q plot")
+save_fig("G5_residual_diagnostics")
 bp = het_breuschpagan(resid, sm.add_constant(X))
 sw = stats.shapiro(resid)
-diag = pd.DataFrame({
-    "Test": ["Breusch-Pagan (constant variance)", "Shapiro-Wilk (normal residuals)",
-             "Durbin-Watson (independence)"],
-    "Statistic": [bp[0], sw.statistic, sm.stats.durbin_watson(resid)],
-    "p-value": [bp[1], sw.pvalue, np.nan],
-}).round(3)
-save_table(diag, "T7_assumption_tests", index=False)
+print(f"\nBreusch-Pagan p = {bp[1]:.3f} | Shapiro-Wilk p = {sw.pvalue:.3f} | Durbin-Watson = {sm.stats.durbin_watson(resid):.3f}")
 
-# F7: standardised coefficients
-sc = coef.drop("const").sort_values("Std. coefficient")
-plt.figure(figsize=(9, 5))
-colors = ["#C73E1D" if p < .05 else "#9BA3AB" for p in sc["p-value"]]
-plt.barh(sc.index, sc["Std. coefficient"], color=colors)
-for i, (v, p) in enumerate(zip(sc["Std. coefficient"], sc["p-value"])):
-    label = "p<0.001" if p < 0.001 else f"p={p:.3f}"
-    plt.text(v + (0.01 if v >= 0 else -0.01), i, label, va="center",
-             ha="left" if v >= 0 else "right", fontsize=9)
-plt.axvline(0, color="k", lw=.8)
-plt.title("Standardised coefficients (red = significant at 5%)")
-plt.xlabel("Change in GD (SD units) per 1 SD change in predictor")
-plt.xlim(-0.35, 0.75)
-save_fig("F7_standardised_coefficients")
+# 6. Significance test: is version 2 really better than version 1?
+section("6. SIGNIFICANCE TEST")
 
-# Largest prediction errors
-errors = d[["date", "stage", "home_team", "away_team", "goal_diff"]].copy()
-errors["predicted_gd"] = ols.fittedvalues.round(2)
-errors["residual"] = resid.round(2)
-largest = errors.reindex(errors.residual.abs().sort_values(ascending=False).index).head(8)
-save_table(largest, "T8_largest_errors", index=False)
 
-# Benchmark: full model vs rank_gap only vs predict-the-mean
-rank_only = sm.OLS(y, sm.add_constant(d[["rank_gap"]])).fit()
-cv_rank = pooled_cv(["rank_gap"]).mean()
-cv_full = cv.mean()
-cmp = pd.DataFrame({
-    "Model": ["Predict mean GD (no variables)", "rank_gap only", "Full model (8 variables)"],
-    "In-sample R2": [0, rank_only.rsquared, ols.rsquared],
-    "In-sample Adj R2": [0, rank_only.rsquared_adj, ols.rsquared_adj],
-    "CV R2": [0, cv_rank.R2, cv_full.R2],
-    "CV MAE": [ev.loc["Baseline: predict mean GD", "MAE"], cv_rank.MAE, cv_full.MAE],
-    "CV RMSE": [ev.loc["Baseline: predict mean GD", "RMSE"], cv_rank.RMSE, cv_full.RMSE],
-}).round(3)
-save_table(cmp, "T9_model_comparison", index=False)
+def avg_oof(model, cols, reps=20):
+    # average out-of-fold prediction for each match across 20 CV repeats
+    return np.mean([cross_val_predict(model, d_all[cols], y, cv=KFold(5, shuffle=True, random_state=s))
+                    for s in range(reps)], axis=0)
 
-# key number for the interprestation
-section("6. INTERPRETATION")
 
-b = ols.params
-eq = " ".join([f"{b['const']:.3f}"] + [f"{'+' if b[c] >= 0 else '-'} {abs(b[c]):.4f}*{c}" for c in X_cols])
-print(f"Predicted GD = {eq}\n")
-print(f"rank_gap: {b.rank_gap:+.4f} GD per rank place "
-      f"(p={ols.pvalues.rank_gap:.1e}, robust HC3 p={robust.pvalues[1]:.1e}). "
-      f"A 30-place gap = {30 * b.rank_gap:+.2f} goals.")
+err_v1 = (y - avg_oof(LinearRegression(), OLD_COLS)) ** 2
+err_v2 = (y - avg_oof(make_ridge(), X_cols)) ** 2
+t_test = stats.ttest_rel(err_v1, err_v2)
+w_test = stats.wilcoxon(err_v1, err_v2)
+print(f"Mean squared error per match: v1 {err_v1.mean():.3f} -> v2 {err_v2.mean():.3f}")
+print(f"v2 better in {(err_v1 > err_v2).sum()} of 104 matches")
+print(f"Paired t-test p = {t_test.pvalue:.3f} | Wilcoxon p = {w_test.pvalue:.3f}")
+print("Significant at 5%" if max(t_test.pvalue, w_test.pvalue) < 0.05
+      else "Not significant at 5%: consistent gain, but 104 matches cannot prove it")
+
+# 7. Interpretation
+section("7. INTERPRETATION")
+eq = " ".join([f"{ridge_int:.3f}"] + [f"{'+' if ridge_coef[c] >= 0 else '-'} {abs(ridge_coef[c]):.4f}*{c}" for c in X_cols])
+print(f"Final Ridge model:\nPredicted GD = {eq}")
 mex = d[(d.home_team == "Mexico") & (d.away_team == "South Africa")].index[0]
-print(f"Example: Mexico v South Africa: rank_gap {d.rank_gap[mex]} -> rank term {d.rank_gap[mex] * b.rank_gap:+.2f}; "
-      f"prediction {ols.fittedvalues[mex]:+.2f}; actual {d.goal_diff[mex]:+d}")
-print("\nSignificant at 5%:", [c for c in X_cols if ols.pvalues[c] < .05])
-print("Not significant   :", [c for c in X_cols if ols.pvalues[c] >= .05])
+print(f"\nExample: Mexico v South Africa -> predicted {ridge.predict(X.loc[[mex]])[0]:+.2f}, actual {y[mex]:+d}")
 print("\nDone. Figures in ./figures, tables in ./tables")
