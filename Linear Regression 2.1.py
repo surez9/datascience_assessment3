@@ -1,13 +1,11 @@
 """
-Linear Regression 2.1 (Improved): Predicting Goal Difference in FIFA World Cup 2026 Matches
-
+Linear Regression 2.1: Predicting Goal Difference in FIFA World Cup 2026 Matches
 """
 
 import os
 import numpy as np
 import pandas as pd
 import matplotlib
-matplotlib.use("Agg")                     # save figures without opening windows
 import matplotlib.pyplot as plt
 import seaborn as sns
 import statsmodels.api as sm
@@ -19,6 +17,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split, KFold, cross_val_predict
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
+matplotlib.use("Agg")                     # save figures without opening windows
 
 # Setup
 DATA_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -49,9 +48,8 @@ def save_table(df, name, index=True):
 def section(title):
     print("\n" + "=" * 70 + f"\n{title}\n" + "=" * 70)
 
-
+# Ridge regression: scale features, then pick the penalty by internal CV
 def make_ridge():
-    # Ridge regression: scale features, then pick the penalty (alpha) by internal CV
     return make_pipeline(StandardScaler(), RidgeCV(alphas=np.logspace(-2, 3, 50)))
 
 

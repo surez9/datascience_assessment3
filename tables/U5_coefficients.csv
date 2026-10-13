@@ -1,9 +1,0 @@
-,OLS coef,OLS robust p,Ridge coef,Ridge std. coef
-rank_gap_sqrt,0.1784,0.0117,0.111,0.2841
-log_rank_ratio,0.1415,0.5797,0.2293,0.1804
-form_gd_diff,0.0137,0.9028,0.0347,0.0319
-rest_days_diff,0.4082,0.1309,0.2647,0.0773
-host_adv,0.4144,0.4759,0.4548,0.0848
-strong_confed_diff,0.0561,0.8254,0.1353,0.0502
-knockout,-0.8619,0.0114,-0.6266,-0.1443
-top10_diff,0.3123,0.485,0.3335,0.1059

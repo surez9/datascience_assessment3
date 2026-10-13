@@ -1,8 +1,0 @@
-Check,Pass
-Row count = 104,True
-Explanatory variables = 8,True
-No missing values,True
-Unique match IDs,True
-First-match form = 0 (no leakage),True
-Target identical to v1,True
-Target equals home - away score,True

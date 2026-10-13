@@ -1,9 +1,0 @@
-Variable,Coefficient
-is_host,0.112067
-is_knockout,-0.311191
-team_matches_played_before,-0.22398
-team_goals_scored_before,0.037388
-team_goals_conceded_before,-0.059742
-opp_goals_scored_before,-0.037782
-opp_goals_conceded_before,0.153799
-team_points_before,0.088969

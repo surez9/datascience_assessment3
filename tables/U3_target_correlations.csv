@@ -1,9 +1,0 @@
-,r with goal_diff
-rank_gap_sqrt,0.639
-log_rank_ratio,0.6
-top10_diff,0.489
-strong_confed_diff,0.309
-form_gd_diff,0.307
-host_adv,0.127
-knockout,-0.116
-rest_days_diff,0.064
