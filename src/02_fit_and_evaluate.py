@@ -3,20 +3,6 @@ Step 2 - Fit and evaluate the two linear regression models (OLS).
 
     LR 2.1  goal_difference  ~ 8 match-level variables      (104 rows)
     LR 2.2  goals_scored     ~ 8 team-level variables       (208 rows)
-
-For each model the script produces
-    * the OLS fit (coefficients, standard errors, t-tests, 95% CI, F-test, R-squared, adjusted R-squared)
-    * VIF (multicollinearity) and standardised coefficients (to compare variable importance)
-    * residual diagnostics (Breusch-Pagan, Shapiro-Wilk, Durbin-Watson, residual plots)
-    * out-of-sample checks: repeated 10-fold cross-validation against a "predict the mean" baseline,
-      and a chronological hold-out (fit on the 72 group matches, test on the 32 knockout matches)
-    * a sensitivity check that adds extra-time goals to the response
-and writes tables, figures and a plain results summary into outputs/.
-
-LR 2.2 has two rows per match (one per team) that share the match, so its standard errors are clustered by
-match and its cross-validation keeps both rows of a match in the same fold.
-
-Run after step 1:   python src/02_fit_and_evaluate.py
 """
 import json
 from pathlib import Path
@@ -61,7 +47,6 @@ MODELS = {
 }
 
 
-# --------------------------------------------------------------------------------------------------
 def repeated_cv(X, y, groups=None, repeats=30, folds=10):
     """Repeated k-fold CV. Returns CV RMSE/MAE/R2 of the model and RMSE/MAE of the 'predict the training mean' baseline."""
     res = {k: [] for k in ("rmse", "mae", "r2", "base_rmse", "base_mae")}
@@ -91,7 +76,7 @@ def analyse(key, cfg):
     assert len(x) == 8
     X = sm.add_constant(df[x].astype(float))
 
-    # 1) the fit ------------------------------------------------------------------------------------
+    # 1) the fit 
     ols = sm.OLS(df[y], X).fit()
     if cfg["cluster"]:
         robust = sm.OLS(df[y], X).fit(cov_type="cluster", cov_kwds={"groups": df[cfg["cluster"]]})
@@ -100,7 +85,7 @@ def analyse(key, cfg):
     print("\n" + "=" * 100 + f"\n{cfg['title']}\n" + "=" * 100)
     print(ols.summary().tables[1])
 
-    # 2) coefficient table with VIF and standardised coefficients -------------------------------------
+    # 2) coefficient table with VIF and standardised coefficients
     sd_x, sd_y = df[x].std(), df[y].std()
     ci = ols.conf_int()
     coef = pd.DataFrame({"coef": ols.params, "std_err": ols.bse, "t": ols.tvalues, "p_value": ols.pvalues,
@@ -111,12 +96,12 @@ def analyse(key, cfg):
     coef["VIF"] = pd.Series({c: variance_inflation_factor(X.values, i) for i, c in enumerate(X.columns) if c != "const"})
     coef.to_csv(OUT / "tables" / f"{key}_coefficients.csv")
 
-    # 3) residual diagnostics -----------------------------------------------------------------------
+    # 3) residual diagnostics
     bp_p = het_breuschpagan(ols.resid, X)[1]            # H0: constant residual variance
     sw_p = stats.shapiro(ols.resid).pvalue              # H0: residuals are normal
     dw = durbin_watson(ols.resid)                       # ~2 means no first-order autocorrelation
 
-    # 4) out-of-sample checks -----------------------------------------------------------------------
+    # 4) out-of-sample checks 
     groups = df[cfg["cluster"]].values if cfg["cluster"] else None
     cv = repeated_cv(df[x].values.astype(float), df[y].values, groups)
     train = df.match_id <= 72                            # group stage (matches 1-72) -> knockouts (73-104)
@@ -128,7 +113,7 @@ def analyse(key, cfg):
                    base_rmse=float(np.sqrt(mean_squared_error(y_te, np.full(len(y_te), df.loc[train, y].mean())))),
                    r2=float(r2_score(y_te, p_ho)))
 
-    # 5) sensitivity: add extra-time goals to the response ---------------------------------------------
+    # 5) sensitivity: add extra-time goals to the response 
     et = pd.read_csv(DATA / "extra_time_targets.csv").set_index("match_id")
     if key == "lr21":
         y_et = df.match_id.map(et.home_goals_incl_et - et.away_goals_incl_et)
@@ -148,12 +133,11 @@ def analyse(key, cfg):
     (OUT / "tables" / f"{key}_summary.json").write_text(json.dumps(summary, indent=1))
     print(json.dumps(summary, indent=1))
 
-    # 6) figures ------------------------------------------------------------------------------------
+    # 6) figures
     make_figures(key, cfg, df, ols, coef)
     return df, coef, summary
 
 
-# --------------------------------------------------------------------------------------------------
 def make_figures(key, cfg, df, ols, coef):
     y = df[cfg["y"]]
     short = cfg["title"].split(" - ")[0]
@@ -212,7 +196,6 @@ def make_figures(key, cfg, df, ols, coef):
     corr.round(3).to_csv(OUT / "tables" / f"{key}_correlation.csv")
 
 
-# --------------------------------------------------------------------------------------------------
 def md_table(df, floatfmt="{:.3f}"):
     rows = ["| " + " | ".join(df.columns) + " |", "|" + "|".join(["---"] * len(df.columns)) + "|"]
     for _, r in df.iterrows():

@@ -26,9 +26,7 @@ def km_between(lat1, lon1, lat2, lon2):
     return 2 * 6371 * np.arcsin(np.sqrt(a))
 
 
-# ------------------------------------------------------------------------------------------
 # 1. Load the two files, join them, and put the matches in time order
-# ------------------------------------------------------------------------------------------
 details = pd.read_csv(RAW / "post_match_details.csv")
 stats = pd.read_csv(RAW / "post_match_stats.csv")
 m = details.merge(stats, on="event_id")
@@ -42,9 +40,7 @@ m["temperature_c"] = m["weather"].apply(lambda w: json.loads(w)["temperature_c"]
 card_columns = ["home_yellow_cards", "home_red_cards", "away_yellow_cards", "away_red_cards"]
 m[card_columns] = m[card_columns].fillna(0)                            # blank = no card
 
-# ------------------------------------------------------------------------------------------
 # 2. One row per team per match (104 matches x 2 teams = 208 rows)
-# ------------------------------------------------------------------------------------------
 def team_rows(side, other):
     """The numbers of one team in every match, from that team's point of view."""
     return pd.DataFrame({
@@ -70,9 +66,7 @@ rows = rows.merge(venues[["venue_id", "country", "latitude", "longitude"]], on="
 rows = rows.rename(columns={"latitude": "lat", "longitude": "lon"})
 rows["host"] = (rows["team"].map(HOST_COUNTRY) == rows["country"]).astype(int)   # host nation playing in its own country
 
-# ------------------------------------------------------------------------------------------
 # 3. "Before the match" variables: average over the team's EARLIER matches only
-# ------------------------------------------------------------------------------------------
 by_team = rows.groupby("team")
 matches_before = by_team.cumcount()                                    # 0 for a team's first match, then 1, 2, ...
 for col in ["xg_for", "xg_against", "xg_net", "finishing", "keeper_prevented",
@@ -84,18 +78,14 @@ rows["rest_days"] = by_team["kickoff"].diff().dt.total_seconds() / 86400        
 rows["travel_km"] = km_between(by_team["lat"].shift(1), by_team["lon"].shift(1), rows["lat"], rows["lon"])
 # (a team's first match has no earlier match, so these values are empty - handled below)
 
-# ------------------------------------------------------------------------------------------
 # 4. Put each team's row next to its OPPONENT's row (columns ending in _opp)
-# ------------------------------------------------------------------------------------------
 pairs = rows.merge(rows, on="match_id", suffixes=("", "_opp"))
 pairs = pairs[pairs["team"] != pairs["team_opp"]]                       # keep team vs opponent, not team vs itself
 match_info = m[["match_id", "event_id", "stage", "knockout_stage", "temperature_c"]]
 pairs = pairs.merge(match_info, on="match_id").sort_values(["match_id", "team"]).reset_index(drop=True)
 pairs["date"] = pairs["kickoff"].dt.strftime("%Y-%m-%d")
 
-# ------------------------------------------------------------------------------------------
 # 5. LR 2.1 - one row per match, variables = HOME minus AWAY
-# ------------------------------------------------------------------------------------------
 home = pairs[pairs["is_home"] == 1].reset_index(drop=True)              # 104 rows: home team vs away team
 lr21 = pd.DataFrame({
     "match_id": home["match_id"], "event_id": home["event_id"], "date": home["date"], "stage": home["stage"],
@@ -115,9 +105,7 @@ lr21[x21] = lr21[x21].fillna(0)                      # no earlier match -> treat
 lr21[x21[:7]] = lr21[x21[:7]].round(3)
 lr21.to_csv(OUT / "lr21_dataset.csv", index=False)
 
-# ------------------------------------------------------------------------------------------
 # 6. LR 2.2 - one row per team per match, using the team's own numbers and the opponent's
-# ------------------------------------------------------------------------------------------
 lr22 = pd.DataFrame({
     "match_id": pairs["match_id"], "event_id": pairs["event_id"], "date": pairs["date"], "stage": pairs["stage"],
     "team": pairs["team"], "opponent": pairs["team_opp"],
@@ -135,9 +123,7 @@ x22 = lr22.columns[7:]
 lr22[x22[:5]] = lr22[x22[:5]].round(3)               # first-round teams get the tournament average instead
 lr22.to_csv(OUT / "lr22_dataset.csv", index=False)
 
-# ------------------------------------------------------------------------------------------
 # 7. Responses including extra-time goals (only used for a robustness check in step 2)
-# ------------------------------------------------------------------------------------------
 extra = pd.DataFrame({
     "match_id": m["match_id"],
     "home_goals_incl_et": m["home_score"] + m["extra_time_score_home"].fillna(0),
@@ -145,9 +131,7 @@ extra = pd.DataFrame({
 })
 extra.to_csv(OUT / "extra_time_targets.csv", index=False)
 
-# ------------------------------------------------------------------------------------------
 # Quick checks
-# ------------------------------------------------------------------------------------------
 assert lr21.shape[0] == 104 and lr22.shape[0] == 208 and len(x21) == 8 and len(x22) == 8
 assert lr21[x21].notna().all().all() and lr22[x22].notna().all().all()
 print("LR 2.1 dataset:", lr21.shape, "  LR 2.2 dataset:", lr22.shape)
