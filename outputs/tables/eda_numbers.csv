@@ -1,0 +1,7 @@
+statistic,value
+goal difference mean,0.442
+goal difference sd,2.014
+draws,29
+matches,104
+"corr(net xG diff, goal difference)",0.413
+three worst-fitted matches,Germany v Curaçao (+6); Senegal v Iraq (+5); Portugal v Uzbekistan (+5)
