@@ -1,0 +1,10 @@
+,xg_net_diff,finishing_diff,keeper_goals_prevented_diff,final_third_entries_diff,fair_play_points_lost_diff,travel_km_diff,rest_days_diff,host_advantage,goal_difference
+xg_net_diff,1.0,0.06,0.154,0.486,-0.271,-0.131,0.02,0.101,0.413
+finishing_diff,0.06,1.0,-0.165,-0.161,-0.145,-0.013,0.051,0.281,-0.035
+keeper_goals_prevented_diff,0.154,-0.165,1.0,0.112,0.023,-0.098,0.118,-0.013,0.168
+final_third_entries_diff,0.486,-0.161,0.112,1.0,-0.168,0.07,-0.118,-0.0,0.306
+fair_play_points_lost_diff,-0.271,-0.145,0.023,-0.168,1.0,0.014,0.227,0.143,0.011
+travel_km_diff,-0.131,-0.013,-0.098,0.07,0.014,1.0,-0.011,-0.072,-0.11
+rest_days_diff,0.02,0.051,0.118,-0.118,0.227,-0.011,1.0,0.078,0.064
+host_advantage,0.101,0.281,-0.013,-0.0,0.143,-0.072,0.078,1.0,0.165
+goal_difference,0.413,-0.035,0.168,0.306,0.011,-0.11,0.064,0.165,1.0

@@ -1,0 +1,10 @@
+,team_xg_for_avg,opp_xg_against_avg,opp_keeper_goals_prevented_avg,team_box_touches_avg,opp_shots_on_target_faced_avg,temperature_c,knockout_stage,team_is_host,goals_scored
+team_xg_for_avg,1.0,-0.207,0.15,0.763,-0.169,0.007,0.307,0.024,0.129
+opp_xg_against_avg,-0.207,1.0,-0.21,-0.139,0.795,-0.156,-0.308,0.054,0.216
+opp_keeper_goals_prevented_avg,0.15,-0.21,1.0,0.083,-0.199,0.047,0.082,0.095,-0.16
+team_box_touches_avg,0.763,-0.139,0.083,1.0,-0.061,-0.049,0.199,0.157,0.204
+opp_shots_on_target_faced_avg,-0.169,0.795,-0.199,-0.061,1.0,-0.146,-0.285,0.073,0.12
+temperature_c,0.007,-0.156,0.047,-0.049,-0.146,1.0,0.28,-0.177,0.053
+knockout_stage,0.307,-0.308,0.082,0.199,-0.285,0.28,1.0,0.0,-0.055
+team_is_host,0.024,0.054,0.095,0.157,0.073,-0.177,0.0,1.0,0.147
+goals_scored,0.129,0.216,-0.16,0.204,0.12,0.053,-0.055,0.147,1.0
