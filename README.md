@@ -13,7 +13,7 @@ python src/03_compare_models.py        # compares competing algorithms (takes ab
 python src/04_eda.py                   # exploratory figure used in the report
 ```
 
-Results are written to `outputs/tables`, `outputs/figures` and `outputs/results_summary.md`.
+Results are written to `outputs/tables`, `outputs/figures`.
 
 ## Explanatory variables
 
@@ -29,7 +29,7 @@ LR 2.1:
 | `rest_days_diff` | days since the team's previous match |
 | `host_advantage` | +1 if the home-listed team is a host playing in its own country, -1 if the away team is, else 0 |
 
-LR 2.2 (team's own perspective, plus the opponent's record):
+LR 2.2:
 
 | Variable | Meaning |
 | `team_xg_for_avg` | team's average xG created in earlier matches |
@@ -41,5 +41,4 @@ LR 2.2 (team's own perspective, plus the opponent's record):
 | `knockout_stage` | 1 from the Round of 32 onward |
 | `team_is_host` | 1 if the team is a host playing in its own country |
 
-No column has the same name in both models.
 
