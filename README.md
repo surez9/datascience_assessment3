@@ -6,10 +6,11 @@
 ## How to run
 
 ```
-pip install -r requirements.txt     # (step 0 also needs: geonamescache)
-python src/00_get_venues.py            # optional: venue city + coordinates (venues.csv is already included)
+pip install -r requirements.txt     # install the required libraries
 python src/01_prepare_data.py          # builds data/processed/*.csv
 python src/02_fit_and_evaluate.py      # fits both models, writes outputs/
+python src/03_compare_models.py        # compares competing algorithms (takes about 10-15 minutes)
+python src/04_eda.py                   # exploratory figure used in the report
 ```
 
 Results are written to `outputs/tables`, `outputs/figures` and `outputs/results_summary.md`.
